@@ -1,0 +1,336 @@
+html {
+    box-sizing: none;
+}
+body {
+    margin: 0;
+    padding: 0%;
+}
+:root {
+    --background-blue: rgb(18, 76, 151);
+    --background-grey: rgb(192, 187, 187);
+    --font-grey: rgb(235, 217, 217);
+    --font-black: rgb(44, 42, 42);
+
+}
+   
+
+header{
+    background-color: blue;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--background-grey);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+#menu-toggle, .burger-menu {
+    display: none;
+}
+.nav-wide {
+    display: none;
+
+}
+/* end nav bar and header */
+#banner{
+    background-image: url(image/banner.jfif);
+    height: 200px;
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    
+}
+#banner h1 {
+
+    color: rgb(218, 218, 209);
+    -webkit-text-stroke: 2px black;
+    text-align: center;
+}
+/* end of banner/ title */
+.part {
+    background-color: var(--background-blue);
+    display: flex;
+    color: var(--font-black);
+   text-align: center;
+    justify-content: center;
+    border-top: 5px var(--background-grey) solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to bottom, #3914bf, #5250ce, #747cd7, #9da6d9, #cdcfd6);
+}
+.subtitle2{
+    color: var(--font-grey);
+}
+#section2, #section3, #section4 {
+    scroll-margin-top: 60px;
+}
+
+#section1 div img {
+    height: 120px;
+    border-radius: 25%;
+    margin-top: 20px;
+}
+
+#section2 {
+    /* background-color: var(--background-grey); */
+    border-top: 5px var(--background-grey) solid;
+}
+
+#section2 div img {
+    height: 150px;
+    width: 150px;
+}
+#section2 div p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#section2 div img:hover{
+    transform: scale(1.25, 1.25);
+
+}
+/* end section 2  */
+#section3 {
+    background-color: blueviolet;
+    background-image: linear-gradient(to bottom, #6d14bf, #5e40b7, #5a56a7, #626592, #717278);
+    color: var(--font-grey);
+}
+#section3 thead th {
+    font-size: 20px;
+}
+#section3 tbody th {
+    font-weight: 100;
+}
+#section3 h2, #contact h1{
+    display: none;
+}
+/* end section 3 */
+
+#section4 {
+    flex-wrap: wrap;
+}
+
+#section4 #background {
+    background-image: url(image/hobbys.png);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section4 #background h2 {
+  font-size: 45px;
+   color: rgb(218, 218, 209);
+    -webkit-text-stroke: 2px black;
+}
+/* end section 4 */
+/* contact page */
+#contact {
+    height: 70vh;
+    
+}
+
+
+/* end contact page */
+/* hobbie page */
+.hob-img {
+    height: 150px;
+}
+/* end hobbie page */
+
+
+footer {
+    background-color: var(--background-grey);
+    display: flex;
+    color: var(--font-grey);
+    justify-content: space-between;
+    align-items: center;
+}
+footer div {
+    margin-right: 45px;
+}
+
+/* end global  */
+@media (max-width: 575px) {
+      .burger-menu {
+            display: flex;
+            cursor: pointer;
+            height: 45px;
+            position: absolute;
+            right: 30px;
+        }
+        #menu {
+            display: none;
+            position: absolute;
+            top: 75px;
+            right: 10px;
+            width: 35%;
+            background-color: gray;
+            color: white;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            margin-top: 3%;
+        }
+        nav li {
+            padding: 4px;
+            margin: 0;
+        }
+        #menu-toggle:checked ~ #menu {
+            display: flex;
+        }
+}
+/* end mobile  */
+/* start ipad */
+@media (min-width: 576px) and (max-width: 768px) {
+
+    p {
+        font-size: 22px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /* css menu et nav */
+          .burger-menu {
+            display: flex;
+            cursor: pointer;
+            height: 45px;
+            position: absolute;
+            right: 30px;
+        }
+        #menu {
+            display: none;
+            position: absolute;
+            top: 75px;
+            right: 10px;
+            width: 35%;
+            background-color: gray;
+            color: white;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            margin-top: 2%;
+            font-size: 20px;
+        }
+        nav li {
+            padding: 4px;
+            margin: 0;
+        }
+        #menu-toggle:checked ~ #menu {
+            display: flex;
+        }
+        /* end nav et menu */
+        /* ipad sections */
+        #banner{
+    height: 300px;
+    font-size: 30px;
+  
+    }
+    #section1 div img {
+    height: 180px;
+    }
+    #section3 thead th {
+        font-size: 30px;
+    }
+    #section3 tbody th {
+        font-size: 20px;
+    }
+    #section4 #background {
+    height: 500px;
+    }
+    /* end ipad sections */
+    /* contact form ipad */
+    #contact_form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px; 
+   
+    }
+    #form_div {
+        width: 80%;
+
+    }
+
+/* contact form ipad end */
+}
+/* end ipad */
+/* laptops  */
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+    #menu {
+        display: none;
+    }
+    .nav-wide {
+        display: inline;
+        
+    }
+    nav h3 {
+        padding-right: 52%;
+    }
+            #banner{
+    height: 300px;
+    font-size: 30px;
+  
+    }
+    .part {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .container-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 20px;
+    }
+    .subtitle2 {
+       grid-column: span 2 / span 2;
+
+    }
+}
+/* large screens  */
+@media screen and (min-width: 1101px) {
+    #menu {
+        display: none;
+    }
+    .nav-wide {
+        display: inline;
+    }
+      nav h3 {
+        padding-right: 65%;
+    }
+            #banner{
+    height: 300px;
+    font-size: 30px;
+  
+    }
+    .part {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .container-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 20px;
+    }
+    .subtitle2 {
+       grid-column: span 2 / span 2;
+
+    }
+    
+}
