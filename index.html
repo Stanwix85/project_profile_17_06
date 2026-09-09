@@ -14,25 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        
-        <nav>
-            <input type="checkbox" id="menu-toggle" >
-            <label  class="burger-menu" for="menu-toggle"><img src="image/burger_menu.png" alt="three lines to open the menu"></label>
-            <h3>Andrew Stanwix</h3>
-            <a href="contact.html" class="nav-wide">Contact Me</a>
-            <a href="hobbie.html" class="nav-wide">Hobbies</a>
-            <ul id="menu">
-                <li><a href="#banner">Home</a></li>
-                <li><a href="#section2">Projects & competance</a></li>
-                <li><a href="#section3">Qulifications</a></li>
-                <li><a href="#section4">About Me</a></li>
-                <li><a href="hobbie.html">Hobbies</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-
-        </nav>
-    </header>
+    <header id="site-header"></header>
     <div id="banner" style="margin: 0;">
         <h1>Web developer and progammer</h1>
         
@@ -48,28 +30,52 @@
    
 
     <section class="part" id="section2">
-        
-            <div class="container-div">
-            <h2 class="subtitle2">Competance</h2>
-            
-            <div>
-            <a href="#"><img src="image/project1.jfif" alt="calculator project" class="square" id="club1"></a>
-            <p>I have worked on simple projects using basic calculations using JavaScript, HTML and CSS.</p>
+        <div class="competence-tabs-wrapper">
+            <h2 class="subtitle2">Competence &amp; Skills</h2>
+
+            <!-- Tabs Navigation -->
+            <div class="tabs-nav" role="tablist" aria-label="Competence Categories">
+                <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-languages" id="tab-btn-languages" type="button">
+                    Languages &amp; Frameworks
+                </button>
+                <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-devops" id="tab-btn-devops" type="button">
+                    DevOps &amp; Infrastructure
+                </button>
+                <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-security" id="tab-btn-security" type="button">
+                    Security &amp; Compliance
+                </button>
+                <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-platforms" id="tab-btn-platforms" type="button">
+                    Platforms &amp; Operating Systems
+                </button>
+                <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-tools" id="tab-btn-tools" type="button">
+                    Developer Tools &amp; Environments
+                </button>
+            </div>
+
+            <!-- Tabs Content Panels -->
+            <div class="tabs-content">
+                <!-- Panel 1: Languages & Frameworks -->
+                <div class="tab-panel active" id="tab-languages" role="tabpanel" aria-labelledby="tab-btn-languages">
+                </div>
+
+                <!-- Panel 2: DevOps & Infrastructure -->
+                <div class="tab-panel" id="tab-devops" role="tabpanel" aria-labelledby="tab-btn-devops">
+                </div>
+
+                <!-- Panel 3: Security & Compliance -->
+                <div class="tab-panel" id="tab-security" role="tabpanel" aria-labelledby="tab-btn-security">
+                </div>
+
+                <!-- Panel 4: Platforms & Operating Systems -->
+                <div class="tab-panel" id="tab-platforms" role="tabpanel" aria-labelledby="tab-btn-platforms">
+                </div>
+
+                <!-- Panel 5: Developer Tools & Environments -->
+                <div class="tab-panel" id="tab-tools" role="tabpanel" aria-labelledby="tab-btn-tools">
+                </div>
+            </div>
         </div>
-         <div>
-            <a href="#"> <img src="image/project.3.png" alt="colour game project" class="square" id="club2"></a>
-            <p>Here I have expanded using sounds and effects to create an enjoyable UX and keep score of the game using JS logic</p>
-        </div>
-         <div>
-            <a href="#"> <img src="image/project2.jfif" alt="robofriends project" class="square" id="club3"></a>
-            <p>This project explores the use of an external API to dynamicaly display content.</p>
-        </div>
-         <div>
-            <a href="https://www.swiss-cybersecurity.ch/"> <img src="image/swiss_cyber_logo.png" alt="swiss cybersecurity badge" class="square" id="club4"></a>
-            <p>Swiss cybersecurity is an Geneva based community to raise awarness of cybersecurity issues, allowing for discusion and networking. I am an active colaborator.</p>
-        </div></div>
-        
-        </section>
+    </section>
         <section class="part" id="section3">
             <h2>Qualification</h2>
         <table>
@@ -112,29 +118,41 @@
         <p>I am a down to earth guy who likes travel, spending time with family and friends. <br> I enjoy keeping fit with my bike and playing golf. </p>
     </div>
     </section>
-   
-    <footer>
-        <h3>Website by Andrew Stanwix</h3>
-        <!-- <p>golf ball by Setyo Ari Wibowo from <a href="https://thenounproject.com/browse/icons/term/golf-ball/" target="_blank" title="golf ball Icons">Noun Project</a> (CC BY 3.0)
-        <div></p> -->
-        <a href="https://www.linkedin.com/in/andrew-stanwix-bb9160310/" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Logmein-Logo-1--Streamline-Logos-Block" height="24" width="24">
-  <desc>
-    Logmein Logo 1 Streamline Icon: https://streamlinehq.com
-  </desc>
-  <path fill="#000000" fill-rule="evenodd" d="M5 1a4 4 0 0 0 -4 4v14a4 4 0 0 0 4 4h14a4 4 0 0 0 4 -4V5a4 4 0 0 0 -4 -4H5Zm15 11a8 8 0 1 1 -16 0 8 8 0 0 1 16 0Zm-7 -2.466a3 3 0 0 1 4 2.83V16h-2v-3.636a1 1 0 0 0 -2 0V16h-2V9.455h2v0.08ZM7.727 7.273V16h2V7.273h-2Z" clip-rule="evenodd" stroke-width="1"></path>
-</svg></a>
-    <a href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Github-Logo-2--Streamline-Logos-Block" height="24" width="24">
-  <desc>
-    Github Logo 2 Streamline Icon: https://streamlinehq.com
-  </desc>
-  <path fill="#000000" fill-rule="evenodd" d="M5 1a4 4 0 0 0 -4 4v14a4 4 0 0 0 4 4h14a4 4 0 0 0 4 -4V5a4 4 0 0 0 -4 -4H5Zm1.815 5.11a7.99 7.99 0 0 1 5.182 -1.903 7.99 7.99 0 0 1 2.531 15.572c-0.405 0.077 -0.535 -0.159 -0.535 -0.372v-2.212a1.893 1.893 0 0 0 -0.546 -1.473c1.78 -0.197 3.648 -0.871 3.648 -3.942a3.086 3.086 0 0 0 -0.822 -2.146 2.87 2.87 0 0 0 -0.08 -2.114s-0.666 -0.214 -2.194 0.82a7.561 7.561 0 0 0 -4.002 0C8.472 7.306 7.8 7.52 7.8 7.52a2.867 2.867 0 0 0 -0.078 2.114 3.09 3.09 0 0 0 -0.823 2.144c0 3.063 1.866 3.748 3.64 3.95a1.705 1.705 0 0 0 -0.508 1.065 1.702 1.702 0 0 1 -2.325 -0.664 1.678 1.678 0 0 0 -1.224 -0.823s-0.78 -0.01 -0.054 0.487c0.426 0.271 0.74 0.686 0.887 1.168 0 0 0.459 1.535 2.682 1.053 0.003 0.504 0.002 0.929 0 1.19l0 0.2c0 0.21 -0.126 0.445 -0.525 0.375A7.99 7.99 0 0 1 6.815 6.11Z" clip-rule="evenodd" stroke-width="1"></path>
-</svg>
-    </a>
-</div>
 
-
-    </footer>
+    <section class="part" id="contact">
+        <div class="contact-container">
+            <h2 class="subtitle2">Contact Me</h2>
+            <form action="https://httpbin.org/get" method="get">
+                <div class="mb-3">
+                    <label for="name" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                </div>
+                <div class="mb-3">
+                    <label for="surname" class="form-label">Surname</label>
+                    <input type="text" class="form-control" id="surname" name="surname">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="telephone" class="form-label">Telephone</label>
+                    <input type="tel" class="form-control" id="telephone" name="telephone">
+                    <div id="teleHelp" class="form-text">*Optional.</div>
+                </div>
+                <div class="mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text">Message</span>
+                        <textarea class="form-control" aria-label="With textarea" placeholder="Please leave a short message" name="message" rows="4"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer id="site-footer"></footer>
+    <script src="components.js" defer></script>
     
 </body>
 </html>

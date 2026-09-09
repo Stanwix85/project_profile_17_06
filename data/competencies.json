@@ -1,0 +1,516 @@
+{
+  "competencies": [
+    {
+      "id": "html",
+      "name": "HTML",
+      "category": "Languages & Frameworks",
+      "svg": "image/icons/html.svg",
+      "tooltipText": "HyperText Markup Language - Core web structure",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "category": "Languages & Frameworks",
+      "svg": "image/icons/css.svg",
+      "tooltipText": "Cascading Style Sheets - Styling and layout for web pages",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "category": "Languages & Frameworks",
+      "svg": "image/icons/javascript.svg",
+      "tooltipText": "Programming language for interactive web pages",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "ejs",
+      "name": "EJS",
+      "category": "Languages & Frameworks",
+      "svg": "image/icons/ejs.svg",
+      "tooltipText": "Embedded JavaScript templates - Server-side rendering",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "category": "Languages & Frameworks",
+      "svg": "image/icons/typescript.svg",
+      "tooltipText": "Typed JavaScript - Adds static typing to JavaScript",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "jquery",
+      "name": "jQuery",
+      "category": "Languages & Frameworks",
+      "svg": "image/icons/jquery.svg",
+      "tooltipText": "Fast, small, and feature-rich JavaScript library",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "category": "Languages & Frameworks",
+      "svg": "image/icons/nodejs.svg",
+      "tooltipText": "JavaScript runtime built on Chrome's V8 JavaScript engine",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "category": "Languages & Frameworks",
+      "svg": "image/icons/react.svg",
+      "tooltipText": "JavaScript library for building user interfaces",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "express",
+      "name": "Express",
+      "category": "Languages & Frameworks",
+      "svg": "image/icons/express.svg",
+      "tooltipText": "Minimal and flexible Node.js web application framework",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "category": "Languages & Frameworks",
+      "svg": "",
+      "tooltipText": "React framework for production with hybrid static & server rendering",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "wordpress",
+      "name": "WordPress",
+      "category": "Languages & Frameworks",
+      "svg": "",
+      "tooltipText": "Content management system based on PHP and MySQL",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "category": "Languages & Frameworks",
+      "svg": "image/icons/java.svg",
+      "tooltipText": "General-purpose programming language",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "springboot",
+      "name": "Spring Boot",
+      "category": "Languages & Frameworks",
+      "svg": "image/icons/springboot.svg",
+      "tooltipText": "Java framework for creating stand-alone, production-grade Spring based applications",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "category": "Languages & Frameworks",
+      "svg": "image/icons/python.svg",
+      "tooltipText": "High-level, interpreted programming language",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "vba",
+      "name": "MS VBA",
+      "category": "Languages & Frameworks",
+      "svg": "image/icons/vba.svg",
+      "tooltipText": "Visual Basic for Applications - Microsoft's event-driven programming language",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "category": "Languages & Frameworks",
+      "svg": "image/icons/postgresql.svg",
+      "tooltipText": "Powerful, open source object-relational database system",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "category": "Languages & Frameworks",
+      "svg": "image/icons/mysql.svg",
+      "tooltipText": "Open-source relational database management system",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "category": "Languages & Frameworks",
+      "svg": "image/icons/mongodb.svg",
+      "tooltipText": "NoSQL database that uses a document-oriented data model",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "bash",
+      "name": "Bash",
+      "category": "Languages & Frameworks",
+      "svg": "image/icons/bash.svg",
+      "tooltipText": "Unix shell and command language",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "powershell",
+      "name": "MS PowerShell",
+      "category": "Languages & Frameworks",
+      "svg": "",
+      "tooltipText": "Task automation and configuration management framework from Microsoft",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "windows-server",
+      "name": "Windows Server",
+      "category": "DevOps & Infrastructure",
+      "svg": "",
+      "tooltipText": "Microsoft server operating system",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "active-directory",
+      "name": "AD DS",
+      "category": "DevOps & Infrastructure",
+      "svg": "",
+      "tooltipText": "Active Directory Domain Services - Directory service for Windows domain networks",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "azure",
+      "name": "MS Azure",
+      "category": "DevOps & Infrastructure",
+      "svg": "",
+      "tooltipText": "Microsoft's cloud computing service",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "category": "DevOps & Infrastructure",
+      "svg": "",
+      "tooltipText": "Platform for developing, shipping, and running applications in containers",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "tcp-ip",
+      "name": "TCP/IP",
+      "category": "DevOps & Infrastructure",
+      "svg": "",
+      "tooltipText": "Transmission Control Protocol / Internet Protocol - Suite of communication protocols",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "api-http",
+      "name": "API/HTTP",
+      "category": "DevOps & Infrastructure",
+      "svg": "",
+      "tooltipText": "Application Programming Interface / Hypertext Transfer Protocol",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "dns",
+      "name": "DNS",
+      "category": "DevOps & Infrastructure",
+      "svg": "",
+      "tooltipText": "Domain Name System - Hierarchical and decentralized naming system",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "ssh",
+      "name": "SSH",
+      "category": "DevOps & Infrastructure",
+      "svg": "",
+      "tooltipText": "Secure Shell - Cryptographic network protocol for operating network services securely",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "vpn-vpc",
+      "name": "VPN/VPC",
+      "category": "DevOps & Infrastructure",
+      "svg": "",
+      "tooltipText": "Virtual Private Network / Virtual Private Cloud - Secure network connections",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "ssl-tls",
+      "name": "SSL/TLS",
+      "category": "Security & Compliance",
+      "svg": "",
+      "tooltipText": "Secure Sockets Layer / Transport Layer Security - Cryptographic protocols for secure communication",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "tryhackme",
+      "name": "TryHackMe",
+      "category": "Security & Compliance",
+      "svg": "",
+      "tooltipText": "Online platform for learning cyber security through hands-on exercises",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "owasp",
+      "name": "OWASP",
+      "category": "Security & Compliance",
+      "svg": "",
+      "tooltipText": "Open Web Application Security Project - Non-profit foundation for software security",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "vulnerability-scanning",
+      "name": "Vulnerability Scanning",
+      "category": "Security & Compliance",
+      "svg": "",
+      "tooltipText": "Automated process of proactively identifying security vulnerabilities",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "penetration-testing",
+      "name": "Pen Testing Basics",
+      "category": "Security & Compliance",
+      "svg": "",
+      "tooltipText": "Penetration testing - Security exercise where a cyber-security expert attempts to find and exploit vulnerabilities",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "network-reconnaissance",
+      "name": "Network Reconnaissance",
+      "category": "Security & Compliance",
+      "svg": "",
+      "tooltipText": "Process of discovering information about a network and its hosts",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "active-reconnaissance",
+      "name": "Active Reconnaissance",
+      "category": "Security & Compliance",
+      "svg": "",
+      "tooltipText": "Direct interaction with the target to gather information",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "attack-vectors",
+      "name": "Attack Vectors",
+      "category": "Security & Compliance",
+      "svg": "",
+      "tooltipText": "Path or means by which an attacker can gain access to a computer or network to deliver a payload or malicious outcome",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "threat-modelling",
+      "name": "Threat Modelling",
+      "category": "Security & Compliance",
+      "svg": "",
+      "tooltipText": "Process of identifying potential threats and vulnerabilities in a system",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "windows",
+      "name": "Windows",
+      "category": "Platforms & Operating Systems",
+      "svg": "",
+      "tooltipText": "Microsoft Windows operating system",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "macos",
+      "name": "Mac OS",
+      "category": "Platforms & Operating Systems",
+      "svg": "",
+      "tooltipText": "Apple's operating system for Macintosh computers",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "ubuntu",
+      "name": "Linux Ubuntu",
+      "category": "Platforms & Operating Systems",
+      "svg": "",
+      "tooltipText": "Linux distribution based on Debian",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "kali-linux",
+      "name": "Kali Linux",
+      "category": "Platforms & Operating Systems",
+      "svg": "",
+      "tooltipText": "Linux distribution designed for digital forensics and penetration testing",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "category": "Platforms & Operating Systems",
+      "svg": "",
+      "tooltipText": "Cloud platform for static sites and serverless functions",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "hostinger",
+      "name": "Hostinger",
+      "category": "Platforms & Operating Systems",
+      "svg": "",
+      "tooltipText": "Web hosting provider and internet domain registrar",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase",
+      "category": "Platforms & Operating Systems",
+      "svg": "",
+      "tooltipText": "Open source Firebase alternative providing backend services",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "n8n",
+      "name": "N8N",
+      "category": "Platforms & Operating Systems",
+      "svg": "",
+      "tooltipText": "Workflow automation tool that connects different applications",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "category": "Platforms & Operating Systems",
+      "svg": "",
+      "tooltipText": "AI-powered coding assistant from Anthropic",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "antigravity",
+      "name": "Antigravity",
+      "category": "Platforms & Operating Systems",
+      "svg": "",
+      "tooltipText": "AI workflow automation platform",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "mistral-vibe",
+      "name": "Mistral Vibe",
+      "category": "Platforms & Operating Systems",
+      "svg": "",
+      "tooltipText": "AI coding agent built by Mistral AI",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "category": "Platforms & Operating Systems",
+      "svg": "",
+      "tooltipText": "AI API routing and management platform",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "vscode",
+      "name": "VS Code",
+      "category": "Developer Tools & Environments",
+      "svg": "",
+      "tooltipText": "Visual Studio Code - Source code editor developed by Microsoft",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "jetbrains",
+      "name": "JetBrains IDE",
+      "category": "Developer Tools & Environments",
+      "svg": "",
+      "tooltipText": "Integrated Development Environment tools from JetBrains",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "postman",
+      "name": "Postman",
+      "category": "Developer Tools & Environments",
+      "svg": "",
+      "tooltipText": "API platform for building and using APIs",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "category": "Developer Tools & Environments",
+      "svg": "",
+      "tooltipText": "Code hosting platform for version control and collaboration",
+      "check": "image/icons/check-primary.svg"
+    },
+    {
+      "id": "jira",
+      "name": "Jira",
+      "category": "Developer Tools & Environments",
+      "svg": "",
+      "tooltipText": "Project management tool for agile software development",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "anaconda",
+      "name": "Anaconda",
+      "category": "Developer Tools & Environments",
+      "svg": "",
+      "tooltipText": "Open-source distribution of Python and R for data science and machine learning",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "jupyterlab",
+      "name": "JupyterLab",
+      "category": "Developer Tools & Environments",
+      "svg": "",
+      "tooltipText": "Next-generation web-based interface for Project Jupyter",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "spyder",
+      "name": "Spyder",
+      "category": "Developer Tools & Environments",
+      "svg": "",
+      "tooltipText": "Scientific Python Development Environment - IDE for data science",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "npm",
+      "name": "npm",
+      "category": "Developer Tools & Environments",
+      "svg": "",
+      "tooltipText": "Node Package Manager - Package manager for JavaScript",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "yarn",
+      "name": "Yarn",
+      "category": "Developer Tools & Environments",
+      "svg": "",
+      "tooltipText": "Package manager for JavaScript that compatibles with npm",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "pgadmin",
+      "name": "pgAdmin",
+      "category": "Developer Tools & Environments",
+      "svg": "",
+      "tooltipText": "Open source administration and management tool for PostgreSQL",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "valentina-db",
+      "name": "Valentina DB",
+      "category": "Developer Tools & Environments",
+      "svg": "",
+      "tooltipText": "Database management tool for various database systems",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "google-workspace",
+      "name": "Google Workspace",
+      "category": "Developer Tools & Environments",
+      "svg": "",
+      "tooltipText": "Suite of cloud computing, productivity and collaboration tools from Google",
+      "check": "image/icons/check-secondary.svg"
+    },
+    {
+      "id": "microsoft-365",
+      "name": "Microsoft 365",
+      "category": "Developer Tools & Environments",
+      "svg": "",
+      "tooltipText": "Productivity software suite from Microsoft",
+      "check": "image/icons/check-secondary.svg"
+    }
+  ]
+}
