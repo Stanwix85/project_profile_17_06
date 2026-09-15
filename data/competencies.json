@@ -76,7 +76,7 @@
       "id": "nextjs",
       "name": "Next.js",
       "category": "Languages & Frameworks",
-      "svg": "",
+      "svg": "image/icons/file-type-light-next.svg",
       "tooltipText": "React framework for production with hybrid static & server rendering",
       "check": "image/icons/check-secondary.svg"
     },
@@ -84,7 +84,7 @@
       "id": "wordpress",
       "name": "WordPress",
       "category": "Languages & Frameworks",
-      "svg": "",
+      "svg": "image/icons/wordpress.svg",
       "tooltipText": "Content management system based on PHP and MySQL",
       "check": "image/icons/check-secondary.svg"
     },
@@ -156,7 +156,7 @@
       "id": "powershell",
       "name": "MS PowerShell",
       "category": "Languages & Frameworks",
-      "svg": "",
+      "svg": "image/icons/file-type-powershell.svg",
       "tooltipText": "Task automation and configuration management framework from Microsoft",
       "check": "image/icons/check-secondary.svg"
     },
@@ -164,7 +164,7 @@
       "id": "windows-server",
       "name": "Windows Server",
       "category": "DevOps & Infrastructure",
-      "svg": "",
+      "svg": "image/icons/windows.svg",
       "tooltipText": "Microsoft server operating system",
       "check": "image/icons/check-primary.svg"
     },
@@ -172,7 +172,7 @@
       "id": "active-directory",
       "name": "AD DS",
       "category": "DevOps & Infrastructure",
-      "svg": "",
+      "svg": "image/icons/windows.svg",
       "tooltipText": "Active Directory Domain Services - Directory service for Windows domain networks",
       "check": "image/icons/check-primary.svg"
     },
@@ -180,7 +180,7 @@
       "id": "azure",
       "name": "MS Azure",
       "category": "DevOps & Infrastructure",
-      "svg": "",
+      "svg": "image/icons/file-type-azure.svg",
       "tooltipText": "Microsoft's cloud computing service",
       "check": "image/icons/check-primary.svg"
     },
@@ -188,7 +188,7 @@
       "id": "docker",
       "name": "Docker",
       "category": "DevOps & Infrastructure",
-      "svg": "",
+      "svg": "image/icons/file-type-docker2.svg",
       "tooltipText": "Platform for developing, shipping, and running applications in containers",
       "check": "image/icons/check-primary.svg"
     },
@@ -196,7 +196,7 @@
       "id": "tcp-ip",
       "name": "TCP/IP",
       "category": "DevOps & Infrastructure",
-      "svg": "",
+      "svg": "image/icons/domain.svg",
       "tooltipText": "Transmission Control Protocol / Internet Protocol - Suite of communication protocols",
       "check": "image/icons/check-secondary.svg"
     },
@@ -204,7 +204,7 @@
       "id": "api-http",
       "name": "API/HTTP",
       "category": "DevOps & Infrastructure",
-      "svg": "",
+      "svg": "image/icons/domain.svg",
       "tooltipText": "Application Programming Interface / Hypertext Transfer Protocol",
       "check": "image/icons/check-secondary.svg"
     },
@@ -212,7 +212,7 @@
       "id": "dns",
       "name": "DNS",
       "category": "DevOps & Infrastructure",
-      "svg": "",
+      "svg": "image/icons/domain.svg",
       "tooltipText": "Domain Name System - Hierarchical and decentralized naming system",
       "check": "image/icons/check-secondary.svg"
     },
@@ -220,7 +220,7 @@
       "id": "ssh",
       "name": "SSH",
       "category": "DevOps & Infrastructure",
-      "svg": "",
+      "svg": "image/icons/ssh.svg",
       "tooltipText": "Secure Shell - Cryptographic network protocol for operating network services securely",
       "check": "image/icons/check-secondary.svg"
     },
@@ -228,7 +228,7 @@
       "id": "vpn-vpc",
       "name": "VPN/VPC",
       "category": "DevOps & Infrastructure",
-      "svg": "",
+      "svg": "image/icons/vps.svg",
       "tooltipText": "Virtual Private Network / Virtual Private Cloud - Secure network connections",
       "check": "image/icons/check-secondary.svg"
     },
@@ -236,7 +236,7 @@
       "id": "ssl-tls",
       "name": "SSL/TLS",
       "category": "Security & Compliance",
-      "svg": "",
+      "svg": "image/icons/domain.svg",
       "tooltipText": "Secure Sockets Layer / Transport Layer Security - Cryptographic protocols for secure communication",
       "check": "image/icons/check-primary.svg"
     },
@@ -244,7 +244,7 @@
       "id": "tryhackme",
       "name": "TryHackMe",
       "category": "Security & Compliance",
-      "svg": "",
+      "svg": "image/icons/tryhackme.svg",
       "tooltipText": "Online platform for learning cyber security through hands-on exercises",
       "check": "image/icons/check-primary.svg"
     },
@@ -252,7 +252,7 @@
       "id": "owasp",
       "name": "OWASP",
       "category": "Security & Compliance",
-      "svg": "",
+      "svg": "image/icons/domain.svg",
       "tooltipText": "Open Web Application Security Project - Non-profit foundation for software security",
       "check": "image/icons/check-primary.svg"
     },
@@ -260,7 +260,7 @@
       "id": "vulnerability-scanning",
       "name": "Vulnerability Scanning",
       "category": "Security & Compliance",
-      "svg": "",
+      "svg": "image/icons/codeigniter.svg",
       "tooltipText": "Automated process of proactively identifying security vulnerabilities",
       "check": "image/icons/check-secondary.svg"
     },
@@ -268,7 +268,7 @@
       "id": "penetration-testing",
       "name": "Pen Testing Basics",
       "category": "Security & Compliance",
-      "svg": "",
+      "svg": "image/icons/firewall.svg",
       "tooltipText": "Penetration testing - Security exercise where a cyber-security expert attempts to find and exploit vulnerabilities",
       "check": "image/icons/check-secondary.svg"
     },
@@ -276,7 +276,7 @@
       "id": "network-reconnaissance",
       "name": "Network Reconnaissance",
       "category": "Security & Compliance",
-      "svg": "",
+      "svg": "image/icons/fedora.svg",
       "tooltipText": "Process of discovering information about a network and its hosts",
       "check": "image/icons/check-secondary.svg"
     },
@@ -284,7 +284,7 @@
       "id": "active-reconnaissance",
       "name": "Active Reconnaissance",
       "category": "Security & Compliance",
-      "svg": "",
+      "svg": "image/icons/fedora.svg",
       "tooltipText": "Direct interaction with the target to gather information",
       "check": "image/icons/check-secondary.svg"
     },
@@ -292,7 +292,7 @@
       "id": "attack-vectors",
       "name": "Attack Vectors",
       "category": "Security & Compliance",
-      "svg": "",
+      "svg": "image/icons/firewall.svg",
       "tooltipText": "Path or means by which an attacker can gain access to a computer or network to deliver a payload or malicious outcome",
       "check": "image/icons/check-secondary.svg"
     },
@@ -300,7 +300,7 @@
       "id": "threat-modelling",
       "name": "Threat Modelling",
       "category": "Security & Compliance",
-      "svg": "",
+      "svg": "image/icons/code.svg",
       "tooltipText": "Process of identifying potential threats and vulnerabilities in a system",
       "check": "image/icons/check-secondary.svg"
     },
@@ -308,7 +308,7 @@
       "id": "windows",
       "name": "Windows",
       "category": "Platforms & Operating Systems",
-      "svg": "",
+      "svg": "image/icons/windows.svg",
       "tooltipText": "Microsoft Windows operating system",
       "check": "image/icons/check-primary.svg"
     },
@@ -316,7 +316,7 @@
       "id": "macos",
       "name": "Mac OS",
       "category": "Platforms & Operating Systems",
-      "svg": "",
+      "svg": "image/icons/mac-os.svg",
       "tooltipText": "Apple's operating system for Macintosh computers",
       "check": "image/icons/check-primary.svg"
     },
@@ -324,7 +324,7 @@
       "id": "ubuntu",
       "name": "Linux Ubuntu",
       "category": "Platforms & Operating Systems",
-      "svg": "",
+      "svg": "image/icons/ubuntu.svg",
       "tooltipText": "Linux distribution based on Debian",
       "check": "image/icons/check-primary.svg"
     },
@@ -332,7 +332,7 @@
       "id": "kali-linux",
       "name": "Kali Linux",
       "category": "Platforms & Operating Systems",
-      "svg": "",
+      "svg": "image/icons/tux.svg",
       "tooltipText": "Linux distribution designed for digital forensics and penetration testing",
       "check": "image/icons/check-primary.svg"
     },
@@ -340,7 +340,7 @@
       "id": "vercel",
       "name": "Vercel",
       "category": "Platforms & Operating Systems",
-      "svg": "",
+      "svg": "image/icons/vercel-dark.svg",
       "tooltipText": "Cloud platform for static sites and serverless functions",
       "check": "image/icons/check-secondary.svg"
     },
@@ -348,7 +348,7 @@
       "id": "hostinger",
       "name": "Hostinger",
       "category": "Platforms & Operating Systems",
-      "svg": "",
+      "svg": "image/icons/squareh.svg",
       "tooltipText": "Web hosting provider and internet domain registrar",
       "check": "image/icons/check-secondary.svg"
     },
@@ -356,7 +356,7 @@
       "id": "supabase",
       "name": "Supabase",
       "category": "Platforms & Operating Systems",
-      "svg": "",
+      "svg": "image/icons/supabase-dark.svg",
       "tooltipText": "Open source Firebase alternative providing backend services",
       "check": "image/icons/check-secondary.svg"
     },
@@ -364,7 +364,7 @@
       "id": "n8n",
       "name": "N8N",
       "category": "Platforms & Operating Systems",
-      "svg": "",
+      "svg": "image/icons/node-plus-fill.svg",
       "tooltipText": "Workflow automation tool that connects different applications",
       "check": "image/icons/check-secondary.svg"
     },
@@ -372,7 +372,7 @@
       "id": "claude-code",
       "name": "Claude Code",
       "category": "Platforms & Operating Systems",
-      "svg": "",
+      "svg": "image/icons/claude.svg",
       "tooltipText": "AI-powered coding assistant from Anthropic",
       "check": "image/icons/check-secondary.svg"
     },
@@ -380,7 +380,7 @@
       "id": "antigravity",
       "name": "Antigravity",
       "category": "Platforms & Operating Systems",
-      "svg": "",
+      "svg": "image/icons/google.svg",
       "tooltipText": "AI workflow automation platform",
       "check": "image/icons/check-secondary.svg"
     },
@@ -388,7 +388,7 @@
       "id": "mistral-vibe",
       "name": "Mistral Vibe",
       "category": "Platforms & Operating Systems",
-      "svg": "",
+      "svg": "image/icons/vibe.svg",
       "tooltipText": "AI coding agent built by Mistral AI",
       "check": "image/icons/check-secondary.svg"
     },
@@ -396,7 +396,7 @@
       "id": "openrouter",
       "name": "OpenRouter",
       "category": "Platforms & Operating Systems",
-      "svg": "",
+      "svg": "image/icons/vps.svg",
       "tooltipText": "AI API routing and management platform",
       "check": "image/icons/check-secondary.svg"
     },
@@ -404,7 +404,7 @@
       "id": "vscode",
       "name": "VS Code",
       "category": "Developer Tools & Environments",
-      "svg": "",
+      "svg": "image/icons/vscode.svg",
       "tooltipText": "Visual Studio Code - Source code editor developed by Microsoft",
       "check": "image/icons/check-primary.svg"
     },
@@ -412,7 +412,7 @@
       "id": "jetbrains",
       "name": "JetBrains IDE",
       "category": "Developer Tools & Environments",
-      "svg": "",
+      "svg": "image/icons/jetbrains.svg",
       "tooltipText": "Integrated Development Environment tools from JetBrains",
       "check": "image/icons/check-primary.svg"
     },
@@ -420,7 +420,7 @@
       "id": "postman",
       "name": "Postman",
       "category": "Developer Tools & Environments",
-      "svg": "",
+      "svg": "image/icons/postman.svg",
       "tooltipText": "API platform for building and using APIs",
       "check": "image/icons/check-primary.svg"
     },
@@ -428,7 +428,7 @@
       "id": "github",
       "name": "GitHub",
       "category": "Developer Tools & Environments",
-      "svg": "",
+      "svg": "image/icons/circlegithub.svg",
       "tooltipText": "Code hosting platform for version control and collaboration",
       "check": "image/icons/check-primary.svg"
     },
@@ -436,7 +436,7 @@
       "id": "jira",
       "name": "Jira",
       "category": "Developer Tools & Environments",
-      "svg": "",
+      "svg": "image/icons/jira.svg",
       "tooltipText": "Project management tool for agile software development",
       "check": "image/icons/check-secondary.svg"
     },
@@ -444,7 +444,7 @@
       "id": "anaconda",
       "name": "Anaconda",
       "category": "Developer Tools & Environments",
-      "svg": "",
+      "svg": "image/icons/anaconda-dark.svg",
       "tooltipText": "Open-source distribution of Python and R for data science and machine learning",
       "check": "image/icons/check-secondary.svg"
     },
@@ -452,7 +452,7 @@
       "id": "jupyterlab",
       "name": "JupyterLab",
       "category": "Developer Tools & Environments",
-      "svg": "",
+      "svg": "image/icons/file-type-jupyter.svg",
       "tooltipText": "Next-generation web-based interface for Project Jupyter",
       "check": "image/icons/check-secondary.svg"
     },
@@ -460,7 +460,7 @@
       "id": "spyder",
       "name": "Spyder",
       "category": "Developer Tools & Environments",
-      "svg": "",
+      "svg": "image/icons/spider.svg",
       "tooltipText": "Scientific Python Development Environment - IDE for data science",
       "check": "image/icons/check-secondary.svg"
     },
@@ -468,15 +468,15 @@
       "id": "npm",
       "name": "npm",
       "category": "Developer Tools & Environments",
-      "svg": "",
+      "svg": "image/icons/file-type-npm.svg",
       "tooltipText": "Node Package Manager - Package manager for JavaScript",
       "check": "image/icons/check-secondary.svg"
     },
     {
-      "id": "yarn",
-      "name": "Yarn",
+      "id": "yaml",
+      "name": "Yaml",
       "category": "Developer Tools & Environments",
-      "svg": "",
+      "svg": "image/icons/file-type-light-yaml-official.svg",
       "tooltipText": "Package manager for JavaScript that compatibles with npm",
       "check": "image/icons/check-secondary.svg"
     },
@@ -484,7 +484,7 @@
       "id": "pgadmin",
       "name": "pgAdmin",
       "category": "Developer Tools & Environments",
-      "svg": "",
+      "svg": "image/icons/postgresql.svg",
       "tooltipText": "Open source administration and management tool for PostgreSQL",
       "check": "image/icons/check-secondary.svg"
     },
@@ -492,7 +492,7 @@
       "id": "valentina-db",
       "name": "Valentina DB",
       "category": "Developer Tools & Environments",
-      "svg": "",
+      "svg": "image/icons/mysql.svg",
       "tooltipText": "Database management tool for various database systems",
       "check": "image/icons/check-secondary.svg"
     },
@@ -500,7 +500,7 @@
       "id": "google-workspace",
       "name": "Google Workspace",
       "category": "Developer Tools & Environments",
-      "svg": "",
+      "svg": "image/icons/googleplus.svg",
       "tooltipText": "Suite of cloud computing, productivity and collaboration tools from Google",
       "check": "image/icons/check-secondary.svg"
     },
@@ -508,8 +508,16 @@
       "id": "microsoft-365",
       "name": "Microsoft 365",
       "category": "Developer Tools & Environments",
-      "svg": "",
+      "svg": "image/icons/microsoftoffice.svg",
       "tooltipText": "Productivity software suite from Microsoft",
+      "check": "image/icons/check-secondary.svg"
+    },
+     {
+      "id": "openai",
+      "name": "Chat-GPT",
+      "category": "Platforms & Operating Systems",
+      "svg": "image/icons/openai.svg",
+      "tooltipText": "AI agent built by Open AI",
       "check": "image/icons/check-secondary.svg"
     }
   ]

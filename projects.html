@@ -19,26 +19,37 @@
         <h1>My Projects</h1>
     </div>
     <section class="part" id="projects">
-        <div class="container-div">
+        <div class="projects-section-wrapper">
             <h2 class="subtitle2">Featured Projects</h2>
+            <!-- <p class="projects-subtext">Filter projects by technology focus or domain.</p> -->
             
-            <div class="preview-card">
-                <a href="#"><img src="image/project1.jfif" alt="calculator project" class="square" id="club1"></a>
-                <p>I have worked on simple projects using basic calculations using JavaScript, HTML and CSS.</p>
+            <!-- Four Category Selector Squares (Tabs) -->
+            <div class="project-categories-grid" role="tablist" aria-label="Project Categories">
+                <button class="project-category-card active" role="tab" aria-selected="true" data-category="Web Projects" type="button">
+                    <span class="cat-icon">🌐</span>
+                    <span class="cat-title">Web Projects</span>
+                    <span class="cat-count" id="count-web-projects">4</span>
+                </button>
+                <button class="project-category-card" role="tab" aria-selected="false" data-category="Java" type="button">
+                    <span class="cat-icon">☕</span>
+                    <span class="cat-title">Java</span>
+                    <span class="cat-count" id="count-java">5</span>
+                </button>
+                <button class="project-category-card" role="tab" aria-selected="false" data-category="Full Stack" type="button">
+                    <span class="cat-icon">⚡</span>
+                    <span class="cat-title">Full Stack</span>
+                    <span class="cat-count" id="count-full-stack">3</span>
+                </button>
+                <button class="project-category-card" role="tab" aria-selected="false" data-category="Other" type="button">
+                    <span class="cat-icon">🛡️</span>
+                    <span class="cat-title">Other</span>
+                    <span class="cat-count" id="count-other">2</span>
+                </button>
             </div>
-            <div class="preview-card">
-                <a href="#"><img src="image/project.3.png" alt="colour game project" class="square" id="club2"></a>
-                <p>Here I have expanded using sounds and effects to create an enjoyable UX and keep score of the game using JS logic</p>
-            </div>
-            <div class="preview-card">
-                <a href="#"><img src="image/project2.jfif" alt="robofriends project" class="square" id="club3"></a>
-                <p>This project explores the use of an external API to dynamicaly display content.</p>
-            </div>
-            <div class="preview-card">
-                <a href="https://www.swiss-cybersecurity.ch/" target="_blank" rel="noopener noreferrer">
-                    <img src="image/swiss_cyber_logo.png" alt="swiss cybersecurity badge" class="square" id="club4">
-                </a>
-                <p>Swiss cybersecurity is an Geneva based community to raise awarness of cybersecurity issues, allowing for discusion and networking. I am an active colaborator.</p>
+
+            <!-- Dynamic Project Cards Grid -->
+            <div class="projects-grid" id="projects-grid" role="region" aria-live="polite">
+                <!-- Dynamically loaded via loadProjects() from data/projects.json -->
             </div>
         </div>
     </section>

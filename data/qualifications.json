@@ -1,0 +1,108 @@
+{
+  "qualifications": [
+    {
+      "id": "isc2-CC",
+      "qualification_name": "CC - Certified in cybersecurity",
+      "school": "ISC2",
+      "date": "2023",
+      "competence": "Full Stack Foundations, JavaScript ES6+, Node.js, Express, RESTful APIs",
+      "description": "Hands-on software development covering client-server architecture, asynchronous JavaScript, REST APIs, and database connectivity."
+    },
+      {
+      "id": "ethical-hacker",
+      "qualification_name": "Ethical hacker",
+      "school": "Cisco Academy",
+      "date": "2025",
+      "competence": "Subnetting, Firewalls, VPNs, OSI Model, DNS, DHCP, Threat Mitigation",
+      "description": "Core computer networking and security hygiene principles, packet analysis, secure protocols, and firewall rulesets."
+    },
+      {
+      "id": "it-customer-support",
+      "qualification_name": "IT Customer support",
+      "school": "Cisco Academy",
+      "date": "2025",
+      "competence": "Subnetting, Firewalls, VPNs, OSI Model, DNS, DHCP, Threat Mitigation",
+      "description": "Core computer networking and security hygiene principles, packet analysis, secure protocols, and firewall rulesets."
+    },
+      {
+      "id": "network-fundamentals",
+      "qualification_name": "Network & Cybersecurity Fundamentals",
+      "school": "Cisco Academy",
+      "date": "2025",
+      "competence": "Subnetting, Firewalls, VPNs, OSI Model, DNS, DHCP, Threat Mitigation",
+      "description": "Core computer networking and security hygiene principles, packet analysis, secure protocols, and firewall rulesets."
+    },
+      {
+      "id": "excel-vba",
+      "qualification_name": "Master Microsoft excel macros and excal VBA",
+      "school": "Udemy",
+      "date": "2025",
+      "competence": "Subnetting, Firewalls, VPNs, OSI Model, DNS, DHCP, Threat Mitigation",
+      "description": "Core computer networking and security hygiene principles, packet analysis, secure protocols, and firewall rulesets."
+    },
+    {
+      "id": "bash-scripting-udemy",
+      "qualification_name": "BASH Scripting",
+      "school": "Udemy",
+      "date": "2025",
+      "competence": "Bash, Shell Scripting, Linux Automation, Process Control, Cron Jobs",
+      "description": "Mastering command-line automation, writing shell utility scripts, pipeline chaining, and managing Linux server cron jobs."
+    },
+    {
+      "id": "tech-it-ifage",
+      "qualification_name": "Certificat de technicien en informatique",
+      "school": "IFAGE",
+      "date": "2025",
+      "competence": "Systems Administration, Network Troubleshooting, Hardware Maintenance, IT Support",
+      "description": "Comprehensive IT technician training covering Windows/Linux systems administration, TCP/IP networking, hardware diagnosis, and workstation infrastructure."
+    },
+    {
+      "id": "web-dev-ifage",
+      "qualification_name": "Web Development",
+      "school": "IFAGE",
+      "date": "2024",
+      "competence": "HTML5, CSS3, JavaScript, Responsive UI, Web Accessibility (a11y)",
+      "description": "Intensive web developer curriculum focusing on semantic HTML, modern responsive CSS layouts, DOM manipulation, and cross-browser web standards."
+    },
+    {
+      "id": "sql-bootcamp-udemy",
+      "qualification_name": "SQL Bootcamp",
+      "school": "Udemy",
+      "date": "2024",
+      "competence": "PostgreSQL, MySQL, Complex Queries, Subqueries, Joins, Database Schema Design",
+      "description": "In-depth relational database architecture, writing optimized queries, aggregation, indexes, and database normalization."
+    },
+       {
+      "id": "web-developer-bootcamp-udemy",
+      "qualification_name": "Web Developer Bootcamp",
+      "school": "Udemy",
+      "date": "2024",
+      "competence": "Full Stack Foundations, JavaScript ES6+, Node.js, Express, RESTful APIs",
+      "description": "Hands-on software development covering client-server architecture, asynchronous JavaScript, REST APIs, and database connectivity."
+    },
+    {
+      "id": "web-developer-bootcamp-udemy",
+      "qualification_name": "ZTM complete Web Developer",
+      "school": "Udemy",
+      "date": "2023",
+      "competence": "Full Stack Foundations, JavaScript ES6+, Node.js, Express, RESTful APIs, React",
+      "description": "Hands-on software development covering client-server architecture, asynchronous JavaScript, REST APIs, and database connectivity."
+    },
+    {
+      "id": "git-github-udemy",
+      "qualification_name": "Git & GitHub Masterclass",
+      "school": "Udemy",
+      "date": "2023",
+      "competence": "Git, Version Control, Branching Strategies, Pull Requests, Merge Conflict Resolution",
+      "description": "Professional source code version control, multi-branch collaborative workflows, rebasing, and GitHub collaboration best practices."
+    },
+    {
+      "id": "python-scripting-udemy",
+      "qualification_name": "Python Bootcamp",
+      "school": "Udemy",
+      "date": "2021",
+      "competence": "Python 3, Scripting, Automation, File Handling, Data Parsing",
+      "description": "Practical Python programming for workflow scripting, system automation, API consumers, and structured data handling."
+    }
+  ]
+}

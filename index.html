@@ -77,39 +77,41 @@
         </div>
     </section>
         <section class="part" id="section3">
-            <h2>Qualification</h2>
-        <table>
-            <thead>
-                <tr>
-                <th>Qualification</th>
-                <th>Date</th>
-            </tr>
-            </thead>
-        <tbody>
-             <tr>
-                <th>Technican IT - IFAGE</th>
-                <th>2025</th>
-            </tr>
-             <tr>
-                <th>Web development - IFAGE</th>
-                <th>2024</th>
-            </tr>
-             <tr>
-                <th>SQL bootcamp - Udemy</th>
-                <th>2024</th>
-            </tr>
-             <tr>
-                <th>BASH - Udemy</th>
-                <th>2024</th>
-            </tr>
-             <tr>
-                <th>Web developer bootcamp - Udemy</th>
-                <th>2023</th>
-            </tr>
-            
-        </tbody>
-    </table>
-    </section>
+            <div class="qualifications-container">
+                <h2 class="subtitle2">Qualifications &amp; Training</h2>
+                <!-- <p class="qualifications-subtext">Continuous scroll of recent degrees, certifications, and technical bootcamps.</p> -->
+
+                <!-- 5-item visible viewport ticker -->
+                <div class="qualifications-ticker-wrapper" id="qualifications-ticker-wrapper">
+                    <div class="qualifications-header-row">
+                        <span class="col-main">Qualification &amp; Institution</span>
+                        <span class="col-date">Year</span>
+                    </div>
+                    <div class="qualifications-viewport" id="qualifications-viewport" tabindex="0" role="region" aria-label="Qualifications scrollable list">
+                        <ul class="qualifications-list" id="qualifications-list">
+                            <!-- Populated dynamically via loadQualifications() from data/qualifications.json -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Interactive Tooltip Bar: updates on hover -->
+                <div class="qualification-tooltip-bar" id="qualification-tooltip-bar" aria-live="polite">
+                    <div class="tooltip-bar-placeholder" id="tooltip-placeholder">
+                        💡 <em>Hover over any qualification to view key competencies and training details</em>
+                    </div>
+                    <div class="tooltip-bar-content" id="tooltip-content" style="display: none;">
+                        <div class="tooltip-bar-heading">
+                            <span class="tooltip-qual-title" id="tooltip-qual-title"></span>
+                            <span class="tooltip-qual-meta" id="tooltip-qual-meta"></span>
+                        </div>
+                        <div class="tooltip-competence-row">
+                            <strong>Key Competencies:</strong> <span id="tooltip-competence-text"></span>
+                        </div>
+                        <p class="tooltip-description-row" id="tooltip-description-text"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
     <section class="part" id="section4">
         <div id="background">
             <h2 class="subtitle">About me</h2>
@@ -122,7 +124,7 @@
     <section class="part" id="contact">
         <div class="contact-container">
             <h2 class="subtitle2">Contact Me</h2>
-            <form action="https://httpbin.org/get" method="get">
+            <form id="contact-form" action="https://script.google.com/macros/s/AKfycbx0s3inMQuMjFVEU53y8H9cHlNfiRYw88yaouYpcotQbCNAalw4mTDifSUX_2MjLmtJ/exec" method="post">
                 <div class="mb-3">
                     <label for="name" class="form-label">First Name</label>
                     <input type="text" class="form-control" id="name" name="name">

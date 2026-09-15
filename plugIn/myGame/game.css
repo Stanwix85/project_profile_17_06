@@ -1,0 +1,209 @@
+@font-face {
+  font-family: ParryHotter;
+  src: url(fonts/ParryHotter.ttf);
+}
+@font-face {
+  font-family: HennyPenny;
+  src: url(fonts/HennyPenny-Regular.ttf);
+}
+@font-face {
+  font-family: Risque;
+  src: url(fonts/Risque-Regular.ttf);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-image: url("images/game_wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #0d1117;
+  color: #FEF2BF;
+  font-family: 'Press Start 2P', cursive, sans-serif;
+  padding: 10px 14px 6px 14px;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+#level-title {
+  font-family: HennyPenny, cursive;
+  font-size: clamp(1.15rem, 3.8vw, 1.55rem);
+  line-height: 1.3;
+  margin: 8px auto 12px auto;
+  max-width: 520px;
+  color: #FEF2BF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.95), 0 0 12px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+#level-title:hover {
+  transform: scale(1.02);
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: auto auto;
+  padding: 0;
+  width: auto;
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  width: clamp(95px, 24vw, 130px);
+  height: clamp(95px, 24vw, 130px);
+  margin: 0;
+  padding: 0;
+  border: 5px solid #111827;
+  border-radius: 20%;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.25);
+  transition: transform 0.1s ease, box-shadow 0.1s ease, filter 0.1s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.65);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.red {
+  background-color: #d63031;
+}
+
+.green {
+  background-color: #27ae60;
+}
+
+.blue {
+  background-color: #0984e3;
+}
+
+.yellow {
+  background-color: #f1c40f;
+}
+
+.pressed {
+  box-shadow: 0 0 24px #ffffff, inset 0 0 10px rgba(255, 255, 255, 0.8) !important;
+  filter: brightness(1.35) !important;
+  transform: scale(0.94) !important;
+}
+
+.snitch {
+  background-image: url("svg/snitch.svg") !important;
+  background-size: 70% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  box-shadow: 0 0 25px #f1c40f, inset 0 0 12px rgba(255, 255, 255, 0.8) !important;
+}
+
+.game-over {
+  background-color: #7f1d1d !important;
+}
+
+footer {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  margin-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.72rem;
+  color: #e2e8f0;
+}
+
+footer span, footer .text-body-secondary {
+  color: #cbd5e1 !important;
+  font-size: 0.72rem;
+  margin: 0;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer img {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 3px;
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+  display: block;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+footer img:hover {
+  transform: scale(1.15);
+  background-color: #ffffff;
+}
+
+@media (max-height: 560px) {
+  #level-title {
+    font-size: 1.05rem;
+    margin: 4px auto 6px auto;
+  }
+  .container {
+    gap: 10px;
+  }
+  .row {
+    gap: 10px;
+  }
+  .btn {
+    width: clamp(80px, 20vw, 105px);
+    height: clamp(80px, 20vw, 105px);
+  }
+  footer {
+    padding: 4px 8px;
+    margin-top: 4px;
+  }
+}

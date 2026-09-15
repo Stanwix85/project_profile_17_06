@@ -1,0 +1,151 @@
+{
+  "categories": [
+    "Web Projects",
+    "Java",
+    "Full Stack",
+    "Other"
+  ],
+  "projects": [
+    {
+      "id": "fan-site",
+      "title": "Harry Potter Fan site",
+      "category": "Web Projects",
+      "image": "image/harry_site.png",
+      "description": "Multi-page static web-site, with linked contact page and themed game.",
+      "tags": ["JavaScript", "HTML5", "CSS3", "JSON"],
+      "demoUrl": "#",
+      "githubUrl": "https://github.com/Stanwix85/harry-potter-project"
+    },
+    {
+      "id": "colour-game-project",
+      "title": "Follow the snitch",
+      "category": "Web Projects",
+      "image": "image/harry_potter_game.png",
+      "description": "Interactive Harry Potter theamed colour theory game with real-time scoring, sound effects, and rewarding user interface animations.",
+      "tags": ["JavaScript", "CSS3", "Audio API", "HTML5"],
+      "demoUrl": "plugIn/myGame/index.html",
+      "popup": true,
+      "githubUrl": "https://github.com/Stanwix85/harry-potter-project"
+    },
+    {
+      "id": "robofriends-project",
+      "title": "Robofriends Directory",
+      "category": "Web Projects",
+      "image": "image/roboFriends.png",
+      "description": "Dynamic web application integrating external REST APIs to fetch, render, and filter profile cards in real time.",
+      "tags": ["JavaScript", "REST API", "CSS Grid"],
+      "demoUrl": "#",
+      "githubUrl": "https://github.com/Stanwix85/robotFriends"
+    },
+    {
+      "id": "java-spring-api",
+      "title": "Spring Boot RESTful Service",
+      "category": "Java",
+      "image": "image/code.png",
+      "description": "Backend enterprise service architecture implementing layered MVC pattern, JPA/Hibernate persistence, and secure REST endpoints.",
+      "tags": ["Java", "Spring Boot", "PostgreSQL", "Maven"],
+      "demoUrl": "#",
+      "githubUrl": "https://github.com/Stanwix85"
+    },
+    {
+      "id": "java-bubble-pop",
+      "title": "Bubble Pop Arcade Game",
+      "category": "Java",
+      "image": "image/bubble.png",
+      "description": "Retro-style 2D action arcade game built in Java. Players navigate an agile pea-shooter along the bottom axis to pop descending, splitting balloons before time elapses. Features precise collision detection, projectile physics, animated sprite states, and escalating difficulty levels.",
+      "tags": ["Java", "OOP", "Game Loop", "2D Graphics", "Collision Physics"],
+      "demoUrl": "#",
+      "githubUrl": "https://github.com/Stanwix85"
+    },
+    {
+      "id": "java-minesweeper",
+      "title": "Classic Minesweeper",
+      "category": "Java",
+      "image": "image/minesweeper.png",
+      "description": "Complete Java desktop implementation of the iconic logic puzzle game Minesweeper. Powered by recursive flood-fill algorithms for cascading empty tile discovery, dynamic mine generation guaranteeing safe initial clicks, flag placement toggles, and live move/time counters.",
+      "tags": ["Java", "Swing/AWT", "Algorithms", "Recursion", "Game Logic"],
+      "demoUrl": "#",
+      "githubUrl": "https://github.com/Stanwix85"
+    },
+    {
+      "id": "java-jeu-de-loie",
+      "title": "Jeu de l'Oie (Game of the Goose)",
+      "category": "Java",
+      "image": "image/jeu-loire.png",
+      "description": "Faithful recreation of the classic French board game 'Jeu de l'Oie' featuring visual board progression paired with rich console diagnostic logs. Incorporates random dice roll simulation, multi-player turn management, and specialized trap squares (the well, labyrinth, prison, and death tile) using OOP design patterns.",
+      "tags": ["Java", "OOP", "Visual Board", "Console Logging", "State Machine"],
+      "demoUrl": "#",
+      "githubUrl": "https://github.com/Stanwix85"
+    },
+    {
+      "id": "java-dungeons-and-dragons",
+      "title": "Dungeons & Dragons Console RPG",
+      "category": "Java",
+      "image": "image/dundrag.png",
+      "description": "Comprehensive turn-based text RPG engine ('Dundrag') in Java modeling core D&D gameplay mechanics. Leverages strict OOP inheritance and polymorphism for character classes, modular equipment, and enemy combatants (dragons, goblins, sorcerers), backed by a MySQL database via JDBC/DAO for persistent character saves and inventory stats.",
+      "tags": ["Java", "MySQL", "JDBC/DAO", "OOP", "Design Patterns"],
+      "demoUrl": "#",
+      "githubUrl": "https://github.com/Stanwix85"
+    },
+    {
+      "id": "portfolio-platform",
+      "title": "Decoupled Portfolio Website",
+      "category": "Full Stack",
+      "image": "image/andrew_campus2.png",
+      "description": "Modern responsive static web application with client-side component injection, dynamic JSON badge and ticker loaders, and dark mode.",
+      "tags": ["HTML5", "CSS3", "JavaScript", "JSON Data"],
+      "demoUrl": "index.html",
+      "githubUrl": "https://github.com/Stanwix85/project_profile_17_06"
+    },
+    {
+      "id": "mjc-festimom-tickets",
+      "title": "MJC Festi'Môm Ticketing Platform",
+      "category": "Full Stack",
+      "image": "image/MJC_FESTIMOM_25_A4.png",
+      "description": "Full-stack event showcase and ticketing portal developed for the MJC Annemasse to manage their flagship October Festi'Mômes children's festival. Engineered with Node.js and Express using EJS server-rendered templates, backed by a PostgreSQL relational database managing live schedules, venue capacities, stage shows, workshops, and family bookings.",
+      "tags": ["Node.js", "Express", "EJS", "PostgreSQL", "JavaScript", "Full Stack"],
+      "demoUrl": "#",
+      "githubUrl": "https://github.com/Stanwix85"
+    },
+    {
+      "id": "budget-app",
+      "title": "Budget app",
+      "category": "Full Stack",
+      "image": "image/budget.png",
+      "description": "App to set a monthly budget for a household, with dashboard, persistance with database.",
+      "tags": ["HTML5", "CSS Grid", "PostgreSQL", "JavaScript"],
+      "demoUrl": "#",
+      "githubUrl": "https://github.com/Stanwix85"
+    },
+    {
+      "id": "swiss-cybersecurity",
+      "title": "Swiss Cybersecurity Collaboration",
+      "category": "Other",
+      "image": "image/swiss_cyber_logo.png",
+      "description": "Active collaborator with Swiss Cybersecurity Geneva community, participating in threat modeling workshops and security awareness initiatives.",
+      "tags": ["Cybersecurity", "Networking", "Community"],
+      "demoUrl": "https://www.swiss-cybersecurity.ch/",
+      "githubUrl": "#"
+    },
+    {
+      "id": "swiss-cybersecurity-quiz",
+      "title": "Swiss Cybersecurity Interactive Quiz",
+      "category": "Web Projects",
+      "image": "image/SCS-quiz.png",
+      "description": "Interactive cybersecurity evaluation quiz built for Swiss Cybersecurity Geneva networking events and run locally in-browser. Built with vanilla HTML5, CSS3, and JavaScript, it challenges attendees across diverse security domains—threat vectors, social engineering, password security, and incident response—with instant score calculation and explanations.",
+      "tags": ["Cybersecurity", "JavaScript", "HTML5", "CSS3", "Networking"],
+      "demoUrl": "#",
+      "githubUrl": "https://github.com/Stanwix85"
+    },
+    {
+      "id": "geneva-biopsy-automation",
+      "title": "Geneva Pathology Lab Biopsy Automation",
+      "category": "Other",
+      "image": "image/VBA-biopsy.png",
+      "description": "Automated clinical data processing application created for a pathology and histology laboratory in Geneva. Engineered using Microsoft Excel VBA and custom macro routines, the solution streamlines manual diagnostic data capture, tabulates patient biopsy metrics, auto-generates comparative trend graphs, and outputs standardized analytical summary texts.",
+      "tags": ["Microsoft VBA", "Excel Macros", "Data Automation", "Analytics"],
+      "demoUrl": "#",
+      "githubUrl": "https://github.com/Stanwix85"
+    }
+  ]
+}
