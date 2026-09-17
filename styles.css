@@ -1526,6 +1526,7 @@ footer {
     .qual-school-text {
         display: none;
     }
+    
 }
 /* end mobile  */
 
@@ -1544,6 +1545,9 @@ footer {
     }
     .tabs-content {
         padding: 22px 16px;
+    }
+    .footer-tag {
+        font-size: 12px;
     }
 }
 
@@ -1590,6 +1594,9 @@ footer {
         font-size: 22px;
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .footer-tag {
+        font-size: 12px;
     }
     .project-categories-grid {
         grid-template-columns: repeat(2, 1fr);
