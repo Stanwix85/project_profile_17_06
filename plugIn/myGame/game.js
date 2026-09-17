@@ -5,9 +5,10 @@ var userClickedPattern = [];
 
 var started = false;
 var level = 0;
+var isGameOver = false;
 
 function startGame() {
-  if (!started) {
+  if (!started && !isGameOver) {
     level = 0;
     $("#level-title").text("Level " + level);
     nextSequence();
@@ -15,21 +16,39 @@ function startGame() {
   }
 }
 
-// Start via physical keyboard
-$(document).keydown(function() {
-  startGame();
-});
-
-// Start/restart via touch or mouse click on the title (supports mobile & desktop)
-$("#level-title").on("click touchstart", function(e) {
-  if (!started) {
-    e.preventDefault();
+// Start via mouse click anywhere on the page
+$(document).click(function() {
+  if (!started && !isGameOver) {
     startGame();
   }
 });
 
-$(".btn").click(function() {
-  if (!started) return;
+// Also allow keyboard start (any key)
+$(document).keydown(function() {
+  if (!started && !isGameOver) {
+    startGame();
+  }
+});
+
+// Start/restart via touch or mouse click on the title (supports mobile & desktop)
+$("#level-title").on("click touchstart", function(e) {
+  if (!started && !isGameOver) {
+    e.preventDefault();
+    e.stopPropagation();
+    startGame();
+  }
+});
+
+$(".btn").click(function(e) {
+  // Stop click from bubbling to $(document).click so wrong answers don't immediately restart
+  e.stopPropagation();
+
+  if (isGameOver) return;
+
+  if (!started) {
+    startGame();
+    return;
+  }
 
   var userChosenColour = $(this).attr("id");
   userClickedPattern.push(userChosenColour);
@@ -48,13 +67,19 @@ function checkAnswer(currentLevel) {
       }, 1000);
     }
   } else {
+    isGameOver = true;
     playSound("wrong");
     $("body").addClass("game-over");
-    $("#level-title").text("Game Over! Press Key or Tap to Restart");
+    $("#level-title").text("Game Over! Click to Restart");
 
     setTimeout(function () {
       $("body").removeClass("game-over");
-    }, 200);
+    }, 300);
+
+    // Brief cooldown so accidental rapid clicks don't immediately restart
+    setTimeout(function () {
+      isGameOver = false;
+    }, 400);
 
     startOver();
   }

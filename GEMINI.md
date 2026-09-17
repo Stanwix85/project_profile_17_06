@@ -17,9 +17,8 @@ This repository contains a responsive personal portfolio and profile website for
 
 ```
 .
-├── index.html                  # Main portfolio homepage (banner, intro, competence tabs, qualification ticker, about me, contact section, footer)
+├── index.html                  # Main portfolio homepage (banner, intro, competence tabs, qualification ticker, about me, beyond the code/hobbies, contact, footer)
 ├── projects.html               # Projects showcase page (4 category tabs: Web, Java, Full Stack, Other)
-├── hobbies.html                # Hobbies and interests page
 ├── components/                 # Reusable HTML partials loaded via fetch()
 │   ├── header.html             # Shared navigation, CV link, theme toggle, and mobile burger menu
 │   └── footer.html             # Shared footer with credentials, quick links, and social icons
@@ -46,7 +45,7 @@ This repository contains a responsive personal portfolio and profile website for
 
 - **HTML5**: Semantic markup (`<header>`, `<nav>`, `<section>`, `<footer>`, `<table>`, `<form>`).
 - **CSS3**: Custom CSS using CSS Custom Properties (variables), Flexbox, and CSS Grid.
-- **Bootstrap 5.3.8**: Loaded via CDN (`https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css`) on `index.html`, `projects.html`, and `hobbies.html` for utility styling and form controls.
+- **Bootstrap 5.3.8**: Loaded via CDN (`https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css`) on `index.html` and `projects.html` for utility styling and form controls.
 - **JavaScript (Vanilla)**:
   - `components.js` uses `fetch()` to dynamically inject `components/header.html` and `components/footer.html` into placeholder tags (`#site-header`, `#site-footer`) across pages, while managing active page states.
   - **Dynamic Competency Badges**: `loadCompetencies()` fetches `data/competencies.json` and renders interactive competency badges dynamically into category tab panels.
@@ -69,7 +68,16 @@ Each entry represents a skill or tool with the following fields:
   "name": "JavaScript",
   "category": "Languages & Frameworks",
   "svg": "image/icons/javascript.svg",
-  "tooltipText": "Core programming language for web interactivity and frontend logic",
+  "tooltipText": "Core programming language for web interactivity and frontend logic\n\nProjects: Harry Potter Fan site, Follow the snitch, Robofriends Directory, Decoupled Portfolio Website, MJC Festi'Môm Ticketing Platform, Budget app, Swiss Cybersecurity Interactive Quiz",
+  "projects": [
+    "Harry Potter Fan site",
+    "Follow the snitch",
+    "Robofriends Directory",
+    "Decoupled Portfolio Website",
+    "MJC Festi'Môm Ticketing Platform",
+    "Budget app",
+    "Swiss Cybersecurity Interactive Quiz"
+  ],
   "check": "image/icons/check-primary.svg"
 }
 ```
@@ -86,7 +94,8 @@ Each entry represents a skill or tool with the following fields:
 
 ### Badge UI & Interactions
 - Badges (`.competence-badge`) contain the technology icon, title, and checkmark.
-- Badges feature hover animations (`translateY(-2px)`) and pure CSS tooltips via `::before` pseudo-elements.
+- Badges feature hover animations (`translateY(-2px)`) and dynamic pure CSS tooltips via `::before` pseudo-elements with downward pointer arrows (`::after`).
+- Tooltips dynamically resize to fit content, format multiple lines (`white-space: pre-line`), and display linked portfolio projects.
 - Full dark mode support for badges, tabs, and tooltips.
 
 ---
@@ -159,7 +168,7 @@ Then visit `http://localhost:8000` in the browser.
 ## 7. Conventions & Guidelines for AI Agents
 
 - **Preserve Existing Code**: Do NOT make unsolicited modifications, refactors, or formatting changes to existing HTML, CSS, or image files unless explicitly requested by the user.
-- **Navigation Consistency**: If modifying navigation links, update `components/header.html`, which is shared across `index.html`, `projects.html`, and `hobbies.html`.
+- **Navigation Consistency**: If modifying navigation links, update `components/header.html`, which is shared across `index.html` and `projects.html`.
 - **Competencies & Skills Updates**: To add or update skills, modify `data/competencies.json` and ensure the corresponding SVG asset is present in `image/icons/`. Categories must match the mappings in `components.js` (`CATEGORY_TO_TAB` and `CATEGORY_MAP`).
 - **Asset Paths**: Use relative paths for assets (`image/...`, `image/icons/...`, and `styles.css`). Note that image extensions include both `.png`, `.jfif`, and `.svg`.
 - **CSS Consistency**: Rely on the existing CSS variables in `styles.css` for color consistency rather than hardcoding arbitrary color values.

@@ -18,6 +18,7 @@ Stores all technical competencies, programming languages, platforms, and develop
       "category": "string",      // Category name matching CATEGORY_TO_TAB
       "svg": "string",           // Relative path to icon SVG (e.g., 'image/icons/javascript.svg')
       "tooltipText": "string",   // Contextual hover description displayed via CSS ::before
+      "projects": ["string"],    // Optional list of portfolio projects utilizing this competency
       "check": "string"          // Path to verification check SVG ('check-primary.svg' or 'check-secondary.svg')
     }
   ]

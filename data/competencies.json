@@ -5,32 +5,59 @@
       "name": "HTML",
       "category": "Languages & Frameworks",
       "svg": "image/icons/html.svg",
-      "tooltipText": "HyperText Markup Language - Core web structure",
-      "check": "image/icons/check-primary.svg"
+      "tooltipText": "HyperText Markup Language - Core web structure\n\nProjects: Harry Potter Fan site, Follow the snitch, Decoupled Portfolio Website, Budget app, Swiss Cybersecurity Interactive Quiz",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Harry Potter Fan site",
+        "Follow the snitch",
+        "Decoupled Portfolio Website",
+        "Budget app",
+        "Swiss Cybersecurity Interactive Quiz"
+      ]
     },
     {
       "id": "css",
       "name": "CSS",
       "category": "Languages & Frameworks",
       "svg": "image/icons/css.svg",
-      "tooltipText": "Cascading Style Sheets - Styling and layout for web pages",
-      "check": "image/icons/check-primary.svg"
+      "tooltipText": "Cascading Style Sheets - Styling and layout for web pages\n\nProjects: Harry Potter Fan site, Follow the snitch, Robofriends Directory, Decoupled Portfolio Website, Budget app, Swiss Cybersecurity Interactive Quiz",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Harry Potter Fan site",
+        "Follow the snitch",
+        "Robofriends Directory",
+        "Decoupled Portfolio Website",
+        "Budget app",
+        "Swiss Cybersecurity Interactive Quiz"
+      ]
     },
     {
       "id": "javascript",
       "name": "JavaScript",
       "category": "Languages & Frameworks",
       "svg": "image/icons/javascript.svg",
-      "tooltipText": "Programming language for interactive web pages",
-      "check": "image/icons/check-primary.svg"
+      "tooltipText": "Programming language for interactive web pages\n\nProjects: Harry Potter Fan site, Follow the snitch, Robofriends Directory, Decoupled Portfolio Website, MJC Festi'Môm Ticketing Platform, Budget app, Swiss Cybersecurity Interactive Quiz",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Harry Potter Fan site",
+        "Follow the snitch",
+        "Robofriends Directory",
+        "Decoupled Portfolio Website",
+        "MJC Festi'Môm Ticketing Platform",
+        "Budget app",
+        "Swiss Cybersecurity Interactive Quiz"
+      ]
     },
     {
       "id": "ejs",
       "name": "EJS",
       "category": "Languages & Frameworks",
       "svg": "image/icons/ejs.svg",
-      "tooltipText": "Embedded JavaScript templates - Server-side rendering",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Embedded JavaScript templates - Server-side rendering\n\nProjects: MJC Festi'Môm Ticketing Platform",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "MJC Festi'Môm Ticketing Platform"
+      ]
     },
     {
       "id": "typescript",
@@ -45,32 +72,44 @@
       "name": "jQuery",
       "category": "Languages & Frameworks",
       "svg": "image/icons/jquery.svg",
-      "tooltipText": "Fast, small, and feature-rich JavaScript library",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Fast, small, and feature-rich JavaScript library\n\nProjects: Follow the snitch",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Follow the snitch"
+      ]
     },
     {
       "id": "nodejs",
       "name": "Node.js",
       "category": "Languages & Frameworks",
       "svg": "image/icons/nodejs.svg",
-      "tooltipText": "JavaScript runtime built on Chrome's V8 JavaScript engine",
-      "check": "image/icons/check-primary.svg"
+      "tooltipText": "JavaScript runtime built on Chrome's V8 JavaScript engine\n\nProjects: MJC Festi'Môm Ticketing Platform",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "MJC Festi'Môm Ticketing Platform"
+      ]
     },
     {
       "id": "react",
       "name": "React",
       "category": "Languages & Frameworks",
       "svg": "image/icons/react.svg",
-      "tooltipText": "JavaScript library for building user interfaces",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "JavaScript library for building user interfaces\n\nProjects: Robofriends Directory",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Robofriends Directory"
+      ]
     },
     {
       "id": "express",
       "name": "Express",
       "category": "Languages & Frameworks",
       "svg": "image/icons/express.svg",
-      "tooltipText": "Minimal and flexible Node.js web application framework",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Minimal and flexible Node.js web application framework\n\nProjects: MJC Festi'Môm Ticketing Platform",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "MJC Festi'Môm Ticketing Platform"
+      ]
     },
     {
       "id": "nextjs",
@@ -93,16 +132,26 @@
       "name": "Java",
       "category": "Languages & Frameworks",
       "svg": "image/icons/java.svg",
-      "tooltipText": "General-purpose programming language",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "General-purpose programming language\n\nProjects: Spring Boot RESTful Service, Bubble Pop Arcade Game, Classic Minesweeper, Jeu de l'Oie, Dungeons & Dragons Console RPG",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Spring Boot RESTful Service",
+        "Bubble Pop Arcade Game",
+        "Classic Minesweeper",
+        "Jeu de l'Oie",
+        "Dungeons & Dragons Console RPG"
+      ]
     },
     {
       "id": "springboot",
       "name": "Spring Boot",
       "category": "Languages & Frameworks",
       "svg": "image/icons/springboot.svg",
-      "tooltipText": "Java framework for creating stand-alone, production-grade Spring based applications",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Java framework for creating stand-alone, production-grade Spring based applications\n\nProjects: Spring Boot RESTful Service",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Spring Boot RESTful Service"
+      ]
     },
     {
       "id": "python",
@@ -110,31 +159,42 @@
       "category": "Languages & Frameworks",
       "svg": "image/icons/python.svg",
       "tooltipText": "High-level, interpreted programming language",
-      "check": "image/icons/check-secondary.svg"
+      "check": "image/icons/check-primary.svg"
     },
     {
       "id": "vba",
       "name": "MS VBA",
       "category": "Languages & Frameworks",
       "svg": "image/icons/vba.svg",
-      "tooltipText": "Visual Basic for Applications - Microsoft's event-driven programming language",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Visual Basic for Applications - Microsoft's event-driven programming language\n\nProjects: Geneva Pathology Lab Biopsy Automation",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Geneva Pathology Lab Biopsy Automation"
+      ]
     },
     {
       "id": "postgresql",
       "name": "PostgreSQL",
       "category": "Languages & Frameworks",
       "svg": "image/icons/postgresql.svg",
-      "tooltipText": "Powerful, open source object-relational database system",
-      "check": "image/icons/check-primary.svg"
+      "tooltipText": "Powerful, open source object-relational database system\n\nProjects: Spring Boot RESTful Service, MJC Festi'Môm Ticketing Platform, Budget app",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Spring Boot RESTful Service",
+        "MJC Festi'Môm Ticketing Platform",
+        "Budget app"
+      ]
     },
     {
       "id": "mysql",
       "name": "MySQL",
       "category": "Languages & Frameworks",
       "svg": "image/icons/mysql.svg",
-      "tooltipText": "Open-source relational database management system",
-      "check": "image/icons/check-primary.svg"
+      "tooltipText": "Open-source relational database management system\n\nProjects: Dungeons & Dragons Console RPG",
+      "check": "image/icons/check-secondary.svg",
+      "projects": [
+        "Dungeons & Dragons Console RPG"
+      ]
     },
     {
       "id": "mongodb",
@@ -142,15 +202,19 @@
       "category": "Languages & Frameworks",
       "svg": "image/icons/mongodb.svg",
       "tooltipText": "NoSQL database that uses a document-oriented data model",
-      "check": "image/icons/check-primary.svg"
+      "check": "image/icons/check-secondary.svg"
     },
     {
       "id": "bash",
       "name": "Bash",
       "category": "Languages & Frameworks",
       "svg": "image/icons/bash.svg",
-      "tooltipText": "Unix shell and command language",
-      "check": "image/icons/check-primary.svg"
+      "tooltipText": "Unix shell and command language\n\nProjects: Decoupled Portfolio Website, Swiss Cybersecurity Collaboration",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Decoupled Portfolio Website",
+        "Swiss Cybersecurity Collaboration"
+      ]
     },
     {
       "id": "powershell",
@@ -182,135 +246,193 @@
       "category": "DevOps & Infrastructure",
       "svg": "image/icons/file-type-azure.svg",
       "tooltipText": "Microsoft's cloud computing service",
-      "check": "image/icons/check-primary.svg"
+      "check": "image/icons/check-secondary.svg"
     },
     {
       "id": "docker",
       "name": "Docker",
       "category": "DevOps & Infrastructure",
       "svg": "image/icons/file-type-docker2.svg",
-      "tooltipText": "Platform for developing, shipping, and running applications in containers",
-      "check": "image/icons/check-primary.svg"
+      "tooltipText": "Platform for developing, shipping, and running applications in containers\n\nProjects: Spring Boot RESTful Service, MJC Festi'Môm Ticketing Platform",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Spring Boot RESTful Service",
+        "MJC Festi'Môm Ticketing Platform"
+      ]
     },
     {
       "id": "tcp-ip",
       "name": "TCP/IP",
       "category": "DevOps & Infrastructure",
       "svg": "image/icons/domain.svg",
-      "tooltipText": "Transmission Control Protocol / Internet Protocol - Suite of communication protocols",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Transmission Control Protocol / Internet Protocol - Suite of communication protocols\n\nProjects: Swiss Cybersecurity Collaboration, Swiss Cybersecurity Interactive Quiz",
+      "check": "image/icons/check-secondary.svg",
+      "projects": [
+        "Swiss Cybersecurity Collaboration",
+        "Swiss Cybersecurity Interactive Quiz"
+      ]
     },
     {
       "id": "api-http",
       "name": "API/HTTP",
       "category": "DevOps & Infrastructure",
       "svg": "image/icons/domain.svg",
-      "tooltipText": "Application Programming Interface / Hypertext Transfer Protocol",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Application Programming Interface / Hypertext Transfer Protocol\n\nProjects: Robofriends Directory, Spring Boot RESTful Service, MJC Festi'Môm Ticketing Platform",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Robofriends Directory",
+        "Spring Boot RESTful Service",
+        "MJC Festi'Môm Ticketing Platform"
+      ]
     },
     {
       "id": "dns",
       "name": "DNS",
       "category": "DevOps & Infrastructure",
       "svg": "image/icons/domain.svg",
-      "tooltipText": "Domain Name System - Hierarchical and decentralized naming system",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Domain Name System - Hierarchical and decentralized naming system\n\nProjects: Decoupled Portfolio Website, Swiss Cybersecurity Collaboration",
+      "check": "image/icons/check-secondary.svg",
+      "projects": [
+        "Decoupled Portfolio Website",
+        "Swiss Cybersecurity Collaboration"
+      ]
     },
     {
       "id": "ssh",
       "name": "SSH",
       "category": "DevOps & Infrastructure",
       "svg": "image/icons/ssh.svg",
-      "tooltipText": "Secure Shell - Cryptographic network protocol for operating network services securely",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Secure Shell - Cryptographic network protocol for operating network services securely\n\nProjects: Swiss Cybersecurity Collaboration, MJC Festi'Môm Ticketing Platform",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Swiss Cybersecurity Collaboration",
+        "MJC Festi'Môm Ticketing Platform"
+      ]
     },
     {
       "id": "vpn-vpc",
       "name": "VPN/VPC",
       "category": "DevOps & Infrastructure",
       "svg": "image/icons/vps.svg",
-      "tooltipText": "Virtual Private Network / Virtual Private Cloud - Secure network connections",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Virtual Private Network / Virtual Private Cloud - Secure network connections\n\nProjects: Swiss Cybersecurity Collaboration",
+      "check": "image/icons/check-secondary.svg",
+      "projects": [
+        "Swiss Cybersecurity Collaboration"
+      ]
     },
     {
       "id": "ssl-tls",
       "name": "SSL/TLS",
       "category": "Security & Compliance",
       "svg": "image/icons/domain.svg",
-      "tooltipText": "Secure Sockets Layer / Transport Layer Security - Cryptographic protocols for secure communication",
-      "check": "image/icons/check-primary.svg"
+      "tooltipText": "Secure Sockets Layer / Transport Layer Security - Cryptographic protocols for secure communication\n\nProjects: Decoupled Portfolio Website, Swiss Cybersecurity Collaboration",
+      "check": "image/icons/check-secondary.svg",
+      "projects": [
+        "Decoupled Portfolio Website",
+        "Swiss Cybersecurity Collaboration"
+      ]
     },
     {
       "id": "tryhackme",
       "name": "TryHackMe",
       "category": "Security & Compliance",
       "svg": "image/icons/tryhackme.svg",
-      "tooltipText": "Online platform for learning cyber security through hands-on exercises",
-      "check": "image/icons/check-primary.svg"
+      "tooltipText": "Online platform for learning cyber security through hands-on exercises\n\nProjects: Swiss Cybersecurity Collaboration",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Swiss Cybersecurity Collaboration"
+      ]
     },
     {
       "id": "owasp",
       "name": "OWASP",
       "category": "Security & Compliance",
       "svg": "image/icons/domain.svg",
-      "tooltipText": "Open Web Application Security Project - Non-profit foundation for software security",
-      "check": "image/icons/check-primary.svg"
+      "tooltipText": "Open Web Application Security Project - Non-profit foundation for software security\n\nProjects: Swiss Cybersecurity Collaboration, Swiss Cybersecurity Interactive Quiz",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Swiss Cybersecurity Collaboration",
+        "Swiss Cybersecurity Interactive Quiz"
+      ]
     },
     {
       "id": "vulnerability-scanning",
       "name": "Vulnerability Scanning",
       "category": "Security & Compliance",
       "svg": "image/icons/codeigniter.svg",
-      "tooltipText": "Automated process of proactively identifying security vulnerabilities",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Automated process of proactively identifying security vulnerabilities\n\nProjects: Swiss Cybersecurity Collaboration",
+      "check": "image/icons/check-secondary.svg",
+      "projects": [
+        "Swiss Cybersecurity Collaboration"
+      ]
     },
     {
       "id": "penetration-testing",
       "name": "Pen Testing Basics",
       "category": "Security & Compliance",
       "svg": "image/icons/firewall.svg",
-      "tooltipText": "Penetration testing - Security exercise where a cyber-security expert attempts to find and exploit vulnerabilities",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Penetration testing - Security exercise where a cyber-security expert attempts to find and exploit vulnerabilities\n\nProjects: Swiss Cybersecurity Collaboration",
+      "check": "image/icons/check-secondary.svg",
+      "projects": [
+        "Swiss Cybersecurity Collaboration"
+      ]
     },
     {
       "id": "network-reconnaissance",
       "name": "Network Reconnaissance",
       "category": "Security & Compliance",
       "svg": "image/icons/fedora.svg",
-      "tooltipText": "Process of discovering information about a network and its hosts",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Process of discovering information about a network and its hosts\n\nProjects: Swiss Cybersecurity Collaboration",
+      "check": "image/icons/check-secondary.svg",
+      "projects": [
+        "Swiss Cybersecurity Collaboration"
+      ]
     },
     {
       "id": "active-reconnaissance",
       "name": "Active Reconnaissance",
       "category": "Security & Compliance",
       "svg": "image/icons/fedora.svg",
-      "tooltipText": "Direct interaction with the target to gather information",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Direct interaction with the target to gather information\n\nProjects: Swiss Cybersecurity Collaboration",
+      "check": "image/icons/check-secondary.svg",
+      "projects": [
+        "Swiss Cybersecurity Collaboration"
+      ]
     },
     {
       "id": "attack-vectors",
       "name": "Attack Vectors",
       "category": "Security & Compliance",
       "svg": "image/icons/firewall.svg",
-      "tooltipText": "Path or means by which an attacker can gain access to a computer or network to deliver a payload or malicious outcome",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Path or means by which an attacker can gain access to a computer or network to deliver a payload or malicious outcome\n\nProjects: Swiss Cybersecurity Collaboration, Swiss Cybersecurity Interactive Quiz",
+      "check": "image/icons/check-secondary.svg",
+      "projects": [
+        "Swiss Cybersecurity Collaboration",
+        "Swiss Cybersecurity Interactive Quiz"
+      ]
     },
     {
       "id": "threat-modelling",
       "name": "Threat Modelling",
       "category": "Security & Compliance",
       "svg": "image/icons/code.svg",
-      "tooltipText": "Process of identifying potential threats and vulnerabilities in a system",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Process of identifying potential threats and vulnerabilities in a system\n\nProjects: Swiss Cybersecurity Collaboration, Swiss Cybersecurity Interactive Quiz",
+      "check": "image/icons/check-secondary.svg",
+      "projects": [
+        "Swiss Cybersecurity Collaboration",
+        "Swiss Cybersecurity Interactive Quiz"
+      ]
     },
     {
       "id": "windows",
       "name": "Windows",
       "category": "Platforms & Operating Systems",
       "svg": "image/icons/windows.svg",
-      "tooltipText": "Microsoft Windows operating system",
-      "check": "image/icons/check-primary.svg"
+      "tooltipText": "Microsoft Windows operating system\n\nProjects: Geneva Pathology Lab Biopsy Automation",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Geneva Pathology Lab Biopsy Automation"
+      ]
     },
     {
       "id": "macos",
@@ -325,24 +447,35 @@
       "name": "Linux Ubuntu",
       "category": "Platforms & Operating Systems",
       "svg": "image/icons/ubuntu.svg",
-      "tooltipText": "Linux distribution based on Debian",
-      "check": "image/icons/check-primary.svg"
+      "tooltipText": "Linux distribution based on Debian\n\nProjects: MJC Festi'Môm Ticketing Platform, Swiss Cybersecurity Collaboration",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "MJC Festi'Môm Ticketing Platform",
+        "Swiss Cybersecurity Collaboration"
+      ]
     },
     {
       "id": "kali-linux",
       "name": "Kali Linux",
       "category": "Platforms & Operating Systems",
       "svg": "image/icons/tux.svg",
-      "tooltipText": "Linux distribution designed for digital forensics and penetration testing",
-      "check": "image/icons/check-primary.svg"
+      "tooltipText": "Linux distribution designed for digital forensics and penetration testing\n\nProjects: Swiss Cybersecurity Collaboration",
+      "check": "image/icons/check-secondary.svg",
+      "projects": [
+        "Swiss Cybersecurity Collaboration"
+      ]
     },
     {
       "id": "vercel",
       "name": "Vercel",
       "category": "Platforms & Operating Systems",
       "svg": "image/icons/vercel-dark.svg",
-      "tooltipText": "Cloud platform for static sites and serverless functions",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Cloud platform for static sites and serverless functions\n\nProjects: Decoupled Portfolio Website, Robofriends Directory",
+      "check": "image/icons/check-secondary.svg",
+      "projects": [
+        "Decoupled Portfolio Website",
+        "Robofriends Directory"
+      ]
     },
     {
       "id": "hostinger",
@@ -365,8 +498,11 @@
       "name": "N8N",
       "category": "Platforms & Operating Systems",
       "svg": "image/icons/node-plus-fill.svg",
-      "tooltipText": "Workflow automation tool that connects different applications",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Workflow automation tool that connects different applications\n\nProjects: Decoupled Portfolio Website",
+      "check": "image/icons/check-secondary.svg",
+      "projects": [
+        "Decoupled Portfolio Website"
+      ]
     },
     {
       "id": "claude-code",
@@ -381,8 +517,11 @@
       "name": "Antigravity",
       "category": "Platforms & Operating Systems",
       "svg": "image/icons/google.svg",
-      "tooltipText": "AI workflow automation platform",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "AI workflow automation platform\n\nProjects: Decoupled Portfolio Website",
+      "check": "image/icons/check-secondary.svg",
+      "projects": [
+        "Decoupled Portfolio Website"
+      ]
     },
     {
       "id": "mistral-vibe",
@@ -405,32 +544,58 @@
       "name": "VS Code",
       "category": "Developer Tools & Environments",
       "svg": "image/icons/vscode.svg",
-      "tooltipText": "Visual Studio Code - Source code editor developed by Microsoft",
-      "check": "image/icons/check-primary.svg"
+      "tooltipText": "Visual Studio Code - Source code editor developed by Microsoft\n\nProjects: Decoupled Portfolio Website, Harry Potter Fan site, MJC Festi'Môm Ticketing Platform, Budget app",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Decoupled Portfolio Website",
+        "Harry Potter Fan site",
+        "MJC Festi'Môm Ticketing Platform",
+        "Budget app"
+      ]
     },
     {
       "id": "jetbrains",
       "name": "JetBrains IDE",
       "category": "Developer Tools & Environments",
       "svg": "image/icons/jetbrains.svg",
-      "tooltipText": "Integrated Development Environment tools from JetBrains",
-      "check": "image/icons/check-primary.svg"
+      "tooltipText": "Integrated Development Environment tools from JetBrains\n\nProjects: Spring Boot RESTful Service, Bubble Pop Arcade Game, Classic Minesweeper, Jeu de l'Oie, Dungeons & Dragons Console RPG",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Spring Boot RESTful Service",
+        "Bubble Pop Arcade Game",
+        "Classic Minesweeper",
+        "Jeu de l'Oie",
+        "Dungeons & Dragons Console RPG"
+      ]
     },
     {
       "id": "postman",
       "name": "Postman",
       "category": "Developer Tools & Environments",
       "svg": "image/icons/postman.svg",
-      "tooltipText": "API platform for building and using APIs",
-      "check": "image/icons/check-primary.svg"
+      "tooltipText": "API platform for building and using APIs\n\nProjects: Spring Boot RESTful Service, Robofriends Directory, MJC Festi'Môm Ticketing Platform",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Spring Boot RESTful Service",
+        "Robofriends Directory",
+        "MJC Festi'Môm Ticketing Platform"
+      ]
     },
     {
       "id": "github",
       "name": "GitHub",
       "category": "Developer Tools & Environments",
       "svg": "image/icons/circlegithub.svg",
-      "tooltipText": "Code hosting platform for version control and collaboration",
-      "check": "image/icons/check-primary.svg"
+      "tooltipText": "Code hosting platform for version control and collaboration\n\nProjects: Decoupled Portfolio Website, Harry Potter Fan site, Follow the snitch, Robofriends Directory, Spring Boot RESTful Service, MJC Festi'Môm Ticketing Platform",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Decoupled Portfolio Website",
+        "Harry Potter Fan site",
+        "Follow the snitch",
+        "Robofriends Directory",
+        "Spring Boot RESTful Service",
+        "MJC Festi'Môm Ticketing Platform"
+      ]
     },
     {
       "id": "jira",
@@ -469,50 +634,71 @@
       "name": "npm",
       "category": "Developer Tools & Environments",
       "svg": "image/icons/file-type-npm.svg",
-      "tooltipText": "Node Package Manager - Package manager for JavaScript",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Node Package Manager - Package manager for JavaScript\n\nProjects: MJC Festi'Môm Ticketing Platform, Robofriends Directory",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "MJC Festi'Môm Ticketing Platform",
+        "Robofriends Directory"
+      ]
     },
     {
       "id": "yaml",
       "name": "Yaml",
       "category": "Developer Tools & Environments",
       "svg": "image/icons/file-type-light-yaml-official.svg",
-      "tooltipText": "Package manager for JavaScript that compatibles with npm",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Package manager for JavaScript that compatibles with npm\n\nProjects: Spring Boot RESTful Service",
+      "check": "image/icons/check-secondary.svg",
+      "projects": [
+        "Spring Boot RESTful Service"
+      ]
     },
     {
       "id": "pgadmin",
       "name": "pgAdmin",
       "category": "Developer Tools & Environments",
       "svg": "image/icons/postgresql.svg",
-      "tooltipText": "Open source administration and management tool for PostgreSQL",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Open source administration and management tool for PostgreSQL\n\nProjects: MJC Festi'Môm Ticketing Platform, Spring Boot RESTful Service, Budget app",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "MJC Festi'Môm Ticketing Platform",
+        "Spring Boot RESTful Service",
+        "Budget app"
+      ]
     },
     {
       "id": "valentina-db",
       "name": "Valentina DB",
       "category": "Developer Tools & Environments",
       "svg": "image/icons/mysql.svg",
-      "tooltipText": "Database management tool for various database systems",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Database management tool for various database systems\n\nProjects: Dungeons & Dragons Console RPG",
+      "check": "image/icons/check-secondary.svg",
+      "projects": [
+        "Dungeons & Dragons Console RPG"
+      ]
     },
     {
       "id": "google-workspace",
       "name": "Google Workspace",
       "category": "Developer Tools & Environments",
       "svg": "image/icons/googleplus.svg",
-      "tooltipText": "Suite of cloud computing, productivity and collaboration tools from Google",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Suite of cloud computing, productivity and collaboration tools from Google\n\nProjects: Decoupled Portfolio Website",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Decoupled Portfolio Website"
+      ]
     },
     {
       "id": "microsoft-365",
       "name": "Microsoft 365",
       "category": "Developer Tools & Environments",
       "svg": "image/icons/microsoftoffice.svg",
-      "tooltipText": "Productivity software suite from Microsoft",
-      "check": "image/icons/check-secondary.svg"
+      "tooltipText": "Productivity software suite from Microsoft\n\nProjects: Geneva Pathology Lab Biopsy Automation",
+      "check": "image/icons/check-primary.svg",
+      "projects": [
+        "Geneva Pathology Lab Biopsy Automation"
+      ]
     },
-     {
+    {
       "id": "openai",
       "name": "Chat-GPT",
       "category": "Platforms & Operating Systems",

@@ -101,8 +101,30 @@ nav a {
     text-decoration: none;
     color: var(--color-text-white);
 }
-#menu-toggle, .burger-menu {
+#menu-toggle {
     display: none;
+}
+.burger-menu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 6px;
+    height: 36px;
+    width: 36px;
+    transition: var(--transition-smooth);
+    flex-shrink: 0;
+    z-index: 1001;
+}
+.burger-menu:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+.burger-menu img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    display: block;
 }
 .nav-wide {
     display: none;
@@ -488,27 +510,63 @@ nav a {
 }
 
 .competence-badge::before {
-    content: attr(title);
+    content: attr(data-tooltip);
     position: absolute;
-    bottom: 100%;
+    bottom: calc(100% + 8px);
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(15, 23, 42, 0.95);
     color: var(--color-text-white);
-    padding: 8px 12px;
-    border-radius: 6px;
-    font-size: 0.8rem;
-    white-space: nowrap;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    white-space: pre-line;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s ease, visibility 0.2s ease;
-    margin-bottom: 8px;
-    max-width: 300px;
+    width: max-content;
+    max-width: min(340px, 85vw);
     text-align: center;
-    line-height: 1.4;
+    line-height: 1.45;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    pointer-events: none;
+    z-index: 100;
 }
 
-.competence-badge:hover::before {
+/* Fallback if data-tooltip is absent but title is provided */
+.competence-badge[title]:not([data-tooltip])::before {
+    content: attr(title);
+}
+
+/* Downward pointer arrow */
+.competence-badge::after {
+    content: '';
+    position: absolute;
+    bottom: calc(100% + 2px);
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: rgba(15, 23, 42, 0.95) transparent transparent transparent;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    pointer-events: none;
+    z-index: 100;
+}
+
+/* Suppress empty tooltips */
+.competence-badge:not([data-tooltip]):not([title])::before,
+.competence-badge:not([data-tooltip]):not([title])::after,
+.competence-badge[data-tooltip=""]::before,
+.competence-badge[data-tooltip=""]::after {
+    display: none;
+}
+
+.competence-badge:hover::before,
+.competence-badge:hover::after,
+.competence-badge:focus::before,
+.competence-badge:focus::after {
     opacity: 1;
     visibility: visible;
 }
@@ -541,7 +599,12 @@ nav a {
 }
 
 [data-theme="dark"] .competence-badge::before {
-    background: rgba(15, 23, 42, 0.95);
+    background: rgba(15, 23, 42, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="dark"] .competence-badge::after {
+    border-color: rgba(15, 23, 42, 0.98) transparent transparent transparent;
 }
 
 /* end section 2  */
@@ -1347,52 +1410,107 @@ footer {
 }
 
 /* end global  */
-@media (max-width: 575px) {
-    .burger-menu {
+/* ==========================================================================
+   Responsive Navigation (Screens <= 768px: Tablets & Mobile)
+   ========================================================================== */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 16px;
         display: flex;
-        cursor: pointer;
-        height: 45px;
-        position: absolute;
-        right: 30px;
+        align-items: center;
+        justify-content: flex-start;
+        position: fixed;
     }
-    .theme-toggle-btn {
-        position: absolute;
-        right: 85px;
-        top: 10px;
+
+    nav h3 {
+        margin: 0;
+        margin-right: auto;
+        order: 1;
     }
+
+    /* Hide desktop navigation links on tablet and mobile */
+    .nav-wide {
+        display: none !important;
+    }
+
+    /* Header buttons aligned in natural flex flow on the right */
     .cv-dropdown {
-        position: absolute;
-        right: 130px;
-        top: 10px;
+        position: static;
+        order: 2;
+        margin-left: 8px;
     }
+
     .cv-btn,
     .cv-dropdown-toggle {
-        padding: 4px 10px;
-        font-size: 0.8rem;
+        padding: 5px 11px;
+        font-size: 0.82rem;
     }
+
+    .theme-toggle-btn {
+        position: static;
+        order: 3;
+        margin-left: 8px;
+        padding: 5px 8px;
+        font-size: 1rem;
+    }
+
+    .burger-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: static;
+        order: 4;
+        margin-left: 10px;
+        height: 36px;
+        width: 36px;
+        padding: 4px;
+        border-radius: 6px;
+        transition: var(--transition-smooth);
+    }
+
+    .burger-menu:hover {
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+    .burger-menu img {
+        width: 26px;
+        height: 26px;
+        object-fit: contain;
+        display: block;
+    }
+
+    /* Mobile & tablet collapsible menu */
     #menu {
         display: none;
         position: absolute;
-        top: 75px;
-        right: 10px;
-        width: 45%;
+        top: 100%;
+        right: 12px;
+        width: min(280px, 85vw);
         background-color: var(--color-bg-menu-mobile);
         color: var(--color-text-white);
         flex-direction: column;
         text-align: center;
         margin: 0;
-        padding: 0;
-        margin-top: 3%;
-        border-radius: 8px;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        padding: 8px 0;
+        margin-top: 6px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        z-index: 1040;
     }
+
     nav li {
-        padding: 6px 4px;
+        padding: 6px 12px;
         margin: 0;
     }
+
     #menu-toggle:checked ~ #menu {
         display: flex;
     }
+}
+
+@media (max-width: 575px) {
     .project-categories-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
@@ -1435,20 +1553,34 @@ footer {
         padding: 6px 10px;
         min-height: 34px;
     }
+    nav {
+        padding: 8px 10px;
+    }
     nav h3 {
-        font-size: 1rem;
-        max-width: 130px;
+        font-size: 0.95rem;
+        max-width: 120px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
-    .cv-dropdown {
-        right: 125px;
-    }
     .cv-btn,
     .cv-dropdown-toggle {
-        padding: 3px 8px;
+        padding: 4px 8px;
         font-size: 0.75rem;
+    }
+    .theme-toggle-btn {
+        padding: 4px 6px;
+        font-size: 0.9rem;
+        margin-left: 5px;
+    }
+    .burger-menu {
+        margin-left: 6px;
+        height: 32px;
+        width: 32px;
+    }
+    .burger-menu img {
+        width: 22px;
+        height: 22px;
     }
 }
 
@@ -1458,53 +1590,6 @@ footer {
         font-size: 22px;
         margin-left: 10px;
         margin-right: 10px;
-    }
-    /* css menu et nav */
-    .burger-menu {
-        display: flex;
-        cursor: pointer;
-        height: 45px;
-        position: absolute;
-        right: 30px;
-    }
-    .theme-toggle-btn {
-        position: absolute;
-        right: 85px;
-        top: 10px;
-    }
-    .cv-dropdown {
-        position: absolute;
-        right: 130px;
-        top: 10px;
-    }
-    .cv-btn,
-    .cv-dropdown-toggle {
-        padding: 4px 10px;
-        font-size: 0.8rem;
-    }
-    #menu {
-        display: none;
-        position: absolute;
-        top: 75px;
-        right: 10px;
-        width: 35%;
-        background-color: var(--color-bg-menu-mobile);
-        color: var(--color-text-white);
-        flex-direction: column;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        margin-top: 2%;
-        font-size: 20px;
-        border-radius: 8px;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-    }
-    nav li {
-        padding: 4px;
-        margin: 0;
-    }
-    #menu-toggle:checked ~ #menu {
-        display: flex;
     }
     .project-categories-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1516,7 +1601,6 @@ footer {
     .footer-about {
         grid-column: span 2;
     }
-    /* end nav et menu */
     /* ipad sections */
     #banner {
         height: 300px;
@@ -1559,6 +1643,9 @@ footer {
     #menu {
         display: none;
     }
+    .burger-menu {
+        display: none;
+    }
     .nav-wide {
         display: inline;
         margin-left: 12px;
@@ -1597,6 +1684,9 @@ footer {
 /* large screens  */
 @media screen and (min-width: 1101px) {
     #menu {
+        display: none;
+    }
+    .burger-menu {
         display: none;
     }
     .nav-wide {

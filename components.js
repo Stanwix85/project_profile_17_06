@@ -48,7 +48,7 @@ function setupNavigation(headerElement) {
     const filename = pathname.substring(pathname.lastIndexOf('/') + 1) || 'index.html';
     const isHome = filename === '' || filename === 'index.html';
 
-    // 1. Desktop navigation: hide current page link
+    // 1. Desktop navigation: hide current page link and ensure section/page links (hobbies, contact) display
     const desktopLinks = headerElement.querySelectorAll('.nav-wide');
     desktopLinks.forEach(link => {
         const pageKey = link.getAttribute('data-page');
@@ -56,8 +56,8 @@ function setupNavigation(headerElement) {
             link.style.display = 'none';
         } else if (filename === 'projects.html' && pageKey === 'projects') {
             link.style.display = 'none';
-        } else if ((filename === 'hobbies.html' || filename === 'hobbie.html') && pageKey === 'hobbies') {
-            link.style.display = 'none';
+        } else {
+            link.style.display = '';
         }
     });
 
@@ -224,13 +224,28 @@ const CATEGORY_TO_TAB = {
 };
 
 /**
+ * Formats the tooltip text for a competence badge, including associated projects if available
+ */
+function formatCompetenceTooltip(competence) {
+    let text = competence.tooltipText || '';
+    if (competence.projects && competence.projects.length > 0 && !text.includes('Projects:')) {
+        text += `\n\nProjects: ${competence.projects.join(', ')}`;
+    }
+    return text;
+}
+
+/**
  * Creates a badge element for a competence
  */
 function createCompetenceBadge(competence) {
     const badge = document.createElement('span');
     badge.className = 'competence-badge';
     badge.setAttribute('data-competence-id', competence.id);
-    badge.setAttribute('title', competence.tooltipText);
+
+    const tooltipText = formatCompetenceTooltip(competence);
+    badge.setAttribute('data-tooltip', tooltipText);
+    badge.setAttribute('aria-label', `${competence.name}: ${tooltipText.replace(/\n+/g, ' ')}`);
+    badge.setAttribute('tabindex', '0');
 
     // Create icon SVG element
     const iconSvg = document.createElement('img');

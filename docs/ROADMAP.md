@@ -4,28 +4,28 @@ This document tracks planned, active, and completed milestones for Andrew Stanwi
 
 ---
 
-## 🎯 Current Milestone: Architecture & Data Decoupling (In Progress)
+## 🎯 Milestone 1: Architecture & Data Decoupling (Completed)
 
 - [x] Decouple competencies into `data/competencies.json` with dynamic badge rendering.
 - [x] Implement accessible tab switching for competency categories with ARIA attributes.
 - [x] Dark/light theme persistence and toggle synchronization.
-- [ ] Decouple qualifications into `data/qualifications.json`.
-- [ ] Implement qualification auto-scrolling ticker (5 visible, scrolling 3 items every 4 seconds, continuous loop).
-- [ ] Add qualification hover pause and interactive competence tooltip bar.
-- [ ] Add permanent CV (PDF) link to header, persistent across desktop and mobile screens.
-- [ ] Decouple projects into `data/projects.json` with 4 category tabs (`Web Projects`, `Java`, `Full Stack`, `Other`).
-- [ ] Enrich footer with training status, contact shortcuts, and dynamic copyright.
-- [ ] Document Google Apps Script & n8n webhook setup for direct Gmail inbox routing with labels.
+- [x] Decouple qualifications into `data/qualifications.json`.
+- [x] Implement qualification auto-scrolling ticker (5 visible, scrolling 3 items every 4 seconds, continuous loop).
+- [x] Add qualification hover pause and interactive competence tooltip bar.
+- [x] Add permanent CV (PDF) link to header, persistent across desktop and mobile screens.
+- [x] Decouple projects into `data/projects.json` with 4 category tabs (`Web Projects`, `Java`, `Full Stack`, `Other`).
+- [x] Enrich footer with training status, contact shortcuts, and dynamic copyright.
+- [x] Document Google Apps Script & n8n webhook setup for direct Gmail inbox routing with labels.
 
 ---
 
 ## 🚀 Future Milestones
 
 ### Milestone 2: Content & Profile Expansion
-- [ ] **About Me Section**: Refresh biography, background story from 20 years culinary leadership to software engineering and IT administration.
+- [x] **About Me Section**: Refresh biography, background story from 20 years culinary leadership to software engineering and IT administration.
+- [x] **Hobbies & Interests Integration**: Consolidated into main index page (Section 5: "Beyond the Code" covering culinary discipline, golf focus, and global travel adaptability).
 - [ ] **Interactive Timeline**: Visual progression timeline connecting past certifications (IFAGE, Udemy) with real-world project deliveries.
 - [ ] **Project Showcases**: Add deep-dive modal views or sub-pages for featured projects with live demonstrations and GitHub repository links.
-- [ ] **Hobbies & Interests Page**: Expand photography, golf, fitness, and culinary passion galleries.
 
 ### Milestone 3: Contact Form Webhook Live Activation
 - [ ] Deploy Google Apps Script Web App or n8n workflow.
