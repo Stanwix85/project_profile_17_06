@@ -33,6 +33,8 @@ This repository contains a responsive personal portfolio and profile website for
 │   └── CONTACT_WEBHOOK_SETUP.md# Guide for connecting contact form to Gmail with automated label
 ├── assets/                     # Downloadable assets and documents
 │   └── Andrew_Stanwix_CV.pdf   # Curriculum Vitae (PDF)
+├── robots.txt                  # Search engine crawler instructions and sitemap link
+├── sitemap.xml                 # XML sitemap for SEO discovery
 ├── styles.css                  # Core CSS stylesheet containing theme variables, layouts, tabs, ticker, and responsive styles
 ├── image/                      # Image assets (PNG, JFIF, photography)
 │   └── icons/                  # SVG icons for tech stack, tools, platforms, and checkmark indicators

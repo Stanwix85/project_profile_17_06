@@ -783,10 +783,30 @@ async function loadProjects() {
 }
 
 /**
- * Configures contact form AJAX submission:
- * - Prevents default full-page redirect to Google Apps Script.
- * - Submits form data via fetch() using POST and no-cors mode.
- * - Provides inline user feedback (sending, success message, or error).
+ * Sanitizes input strings by removing HTML/script tags, trimming whitespace, and capping length.
+ * Prevents Cross-Site Scripting (XSS) and oversized payloads.
+ *
+ * @param {string} str - Raw input string
+ * @param {number} maxLength - Maximum allowable length
+ * @returns {string} Sanitized string
+ */
+function sanitizeInput(str, maxLength = 2000) {
+    if (typeof str !== 'string') return '';
+    return str
+        .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
+        .replace(/<[^>]+>/g, '')
+        .trim()
+        .slice(0, maxLength);
+}
+
+/**
+ * Configures contact form submission with multi-layered security & anti-bot defenses:
+ * - Anti-bot Honeypot trap: drops automated submissions with fake success and zero quota usage.
+ * - Interaction timing trap: detects sub-second programmatic submissions.
+ * - Client-side rate limiting: enforces a 60-second cooldown via localStorage.
+ * - Input validation & sanitization: prevents XSS, header injection, and buffer overflow.
+ * - Safe DOM manipulation: uses textContent exclusively to eliminate DOM XSS risks.
+ * - Submits sanitized data via fetch() using POST and no-cors mode.
  */
 function setupContactForm() {
     const form = document.getElementById('contact-form') || document.querySelector('#contact form');
@@ -803,8 +823,85 @@ function setupContactForm() {
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalBtnText = submitBtn ? submitBtn.textContent : 'Submit';
 
+    // Track user interaction start time to detect automated bot submissions (< 2.5s)
+    let formInteractionStartTime = null;
+    const trackInteraction = () => {
+        if (!formInteractionStartTime) {
+            formInteractionStartTime = Date.now();
+        }
+    };
+    form.addEventListener('focusin', trackInteraction, { once: true });
+    form.addEventListener('input', trackInteraction, { once: true });
+
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
+
+        // 1. Check Rate Limiting / Cooldown (60 seconds)
+        const COOLDOWN_MS = 60000;
+        const lastSubmission = localStorage.getItem('portfolio_last_contact_ts');
+        if (lastSubmission) {
+            const elapsedSinceLast = Date.now() - parseInt(lastSubmission, 10);
+            if (elapsedSinceLast < COOLDOWN_MS) {
+                const remainingSec = Math.ceil((COOLDOWN_MS - elapsedSinceLast) / 1000);
+                statusDiv.style.display = 'block';
+                statusDiv.className = 'contact-status-msg mt-3 alert alert-warning';
+                statusDiv.textContent = `⏳ Please wait ${remainingSec} second${remainingSec > 1 ? 's' : ''} before sending another message.`;
+                return;
+            }
+        }
+
+        // 2. Honeypot Anti-Bot Trap:
+        // Hidden field filled only by automated bots scraping the DOM
+        const hpInput = form.querySelector('[name="website_hp"]');
+        if (hpInput && hpInput.value.trim().length > 0) {
+            console.warn('[Security] Honeypot triggered; discarding bot submission.');
+            // Fake immediate success so the bot stops retry loops, but make zero network requests
+            statusDiv.style.display = 'block';
+            statusDiv.className = 'contact-status-msg mt-3 alert alert-success';
+            statusDiv.textContent = '✅ Thank you! Your message has been sent. I will get back to you shortly.';
+            form.reset();
+            return;
+        }
+
+        // 3. Timing Trap: Humans take > 2.5 seconds to fill out a contact form
+        if (formInteractionStartTime && (Date.now() - formInteractionStartTime < 2500)) {
+            console.warn('[Security] Submission occurred too fast (< 2.5s); dropping bot submission.');
+            statusDiv.style.display = 'block';
+            statusDiv.className = 'contact-status-msg mt-3 alert alert-success';
+            statusDiv.textContent = '✅ Thank you! Your message has been sent. I will get back to you shortly.';
+            form.reset();
+            return;
+        }
+
+        // 4. Validate Required Inputs
+        const nameVal = (form.querySelector('[name="name"]')?.value || '').trim();
+        const surnameVal = (form.querySelector('[name="surname"]')?.value || '').trim();
+        const emailVal = (form.querySelector('[name="email"]')?.value || '').trim();
+        const telephoneVal = (form.querySelector('[name="telephone"]')?.value || '').trim();
+        const messageVal = (form.querySelector('[name="message"]')?.value || '').trim();
+
+        if (!nameVal || !surnameVal || !emailVal || !messageVal) {
+            statusDiv.style.display = 'block';
+            statusDiv.className = 'contact-status-msg mt-3 alert alert-warning';
+            statusDiv.textContent = '⚠️ Please fill out all required fields (First Name, Surname, Email, and Message).';
+            return;
+        }
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(emailVal)) {
+            statusDiv.style.display = 'block';
+            statusDiv.className = 'contact-status-msg mt-3 alert alert-warning';
+            statusDiv.textContent = '⚠️ Please enter a valid email address.';
+            return;
+        }
+
+        // 5. Sanitize Inputs against XSS / Oversized Payloads
+        const sanitizedParams = new URLSearchParams();
+        sanitizedParams.set('name', sanitizeInput(nameVal, 60));
+        sanitizedParams.set('surname', sanitizeInput(surnameVal, 60));
+        sanitizedParams.set('email', sanitizeInput(emailVal, 100));
+        sanitizedParams.set('telephone', sanitizeInput(telephoneVal, 25));
+        sanitizedParams.set('message', sanitizeInput(messageVal, 2000));
 
         if (submitBtn) {
             submitBtn.disabled = true;
@@ -816,19 +913,21 @@ function setupContactForm() {
         statusDiv.textContent = 'Sending your message...';
 
         try {
-            const formData = new FormData(form);
-            const params = new URLSearchParams(formData);
             const actionUrl = form.getAttribute('action');
 
             await fetch(actionUrl, {
                 method: 'POST',
-                body: params,
+                body: sanitizedParams,
                 mode: 'no-cors'
             });
+
+            // Record submission time for rate limiting
+            localStorage.setItem('portfolio_last_contact_ts', Date.now().toString());
 
             statusDiv.className = 'contact-status-msg mt-3 alert alert-success';
             statusDiv.textContent = '✅ Thank you! Your message has been sent. I will get back to you shortly.';
             form.reset();
+            formInteractionStartTime = null;
 
         } catch (err) {
             console.error('[components.js] Contact form submission failed:', err);

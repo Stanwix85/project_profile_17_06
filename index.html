@@ -1,15 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- meta tags -->
+    <!-- Essential Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Profile for Andrew Stanwix">
+    <title>Andrew Stanwix | Full-Stack Web Developer &amp; IT Technician</title>
+    <meta name="description" content="Portfolio of Andrew Stanwix, Junior Full-Stack Web Developer based in the Annecy / Geneva area. Specializing in JavaScript, Java, Spring Boot, modern CSS, and secure IT solutions.">
+    <meta name="keywords" content="Andrew Stanwix, Web Developer, Full Stack Developer, Junior Developer, Annecy, Geneva, Java, Spring Boot, JavaScript, HTML5, CSS3, Campus Numérique, Alternance, Stage">
     <meta name="author" content="Andrew Stanwix">
-    <meta name="search_date" content="2020-06-17">
-    <meta name="og:locality" content="Annecy" >
-    <!-- end meta tags -->
-    <title>Andrew's Profile</title>
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#124c97">
+    <link rel="canonical" href="https://andrewstanwix.com/">
+
+    <!-- Open Graph / Social Sharing (LinkedIn, Facebook) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Andrew Stanwix Portfolio">
+    <meta property="og:title" content="Andrew Stanwix | Full-Stack Web Developer &amp; IT Technician">
+    <meta property="og:description" content="Explore technical competencies, qualifications, and software projects by Andrew Stanwix. Open to opportunities in the Annecy / Geneva region.">
+    <meta property="og:url" content="https://andrewstanwix.com/">
+    <meta property="og:image" content="https://andrewstanwix.com/image/andrew_campus2.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://andrewstanwix.com/#person",
+                "name": "Andrew Stanwix",
+                "jobTitle": "Full-Stack Web Developer & IT Technician",
+                "url": "https://andrewstanwix.com/",
+                "image": "https://andrewstanwix.com/image/andrew_campus2.png",
+                "email": "mailto:andrewstanwix@gmail.com",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Annecy",
+                    "addressRegion": "Haute-Savoie",
+                    "addressCountry": "FR"
+                },
+                "alumniOf": {
+                    "@type": "EducationalOrganization",
+                    "name": "Campus Numérique"
+                },
+                "sameAs": [
+                    "https://www.linkedin.com/in/andrew-stanwix-bb9160310/",
+                    "https://github.com/Stanwix85"
+                ],
+                "knowsAbout": [
+                    "JavaScript",
+                    "Java",
+                    "Spring Boot",
+                    "HTML5",
+                    "CSS3",
+                    "Cybersecurity",
+                    "Git",
+                    "Linux",
+                    "Docker",
+                    "REST APIs"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://andrewstanwix.com/#website",
+                "url": "https://andrewstanwix.com/",
+                "name": "Andrew Stanwix Portfolio",
+                "description": "Personal developer portfolio, showcasing skills, qualifications, and projects.",
+                "author": {
+                    "@id": "https://andrewstanwix.com/#person"
+                }
+            }
+        ]
+    }
+    </script>
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 </head>
@@ -150,29 +215,34 @@
     <section class="part" id="contact">
         <div class="contact-container">
             <h2 class="subtitle2">Contact Me</h2>
-            <form id="contact-form" action="https://script.google.com/macros/s/AKfycbx0s3inMQuMjFVEU53y8H9cHlNfiRYw88yaouYpcotQbCNAalw4mTDifSUX_2MjLmtJ/exec" method="post">
-                <div class="mb-3">
-                    <label for="name" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="name" name="name">
+            <form id="contact-form" action="https://script.google.com/macros/s/AKfycbx0s3inMQuMjFVEU53y8H9cHlNfiRYw88yaouYpcotQbCNAalw4mTDifSUX_2MjLmtJ/exec" method="post" novalidate>
+                <!-- Anti-spam Honeypot (hidden from human visitors and screen readers) -->
+                <div class="hp-field" aria-hidden="true">
+                    <label for="website_hp">Leave this field blank</label>
+                    <input type="text" id="website_hp" name="website_hp" tabindex="-1" autocomplete="off">
                 </div>
                 <div class="mb-3">
-                    <label for="surname" class="form-label">Surname</label>
-                    <input type="text" class="form-control" id="surname" name="surname">
+                    <label for="name" class="form-label">First Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="name" name="name" required maxlength="60" autocomplete="given-name">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+                    <label for="surname" class="form-label">Surname <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="surname" name="surname" required maxlength="60" autocomplete="family-name">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required maxlength="100" autocomplete="email">
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
                     <label for="telephone" class="form-label">Telephone</label>
-                    <input type="tel" class="form-control" id="telephone" name="telephone">
+                    <input type="tel" class="form-control" id="telephone" name="telephone" maxlength="25" autocomplete="tel">
                     <div id="teleHelp" class="form-text">*Optional.</div>
                 </div>
                 <div class="mb-3">
                     <div class="input-group">
-                        <span class="input-group-text">Message</span>
-                        <textarea class="form-control" aria-label="With textarea" placeholder="Please leave a short message" name="message" rows="4"></textarea>
+                        <span class="input-group-text">Message <span class="text-danger ms-1">*</span></span>
+                        <textarea class="form-control" aria-label="With textarea" placeholder="Please leave a short message" name="message" rows="4" required maxlength="2000"></textarea>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>

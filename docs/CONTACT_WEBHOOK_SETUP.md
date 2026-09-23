@@ -46,41 +46,78 @@ This solution is **100% free forever**, requires **zero external third-party sub
        }
 
        // Return ready status if visited in browser without parameters
-       if (!data.name && !data.email && !data.message) {
+       if (!data.name && !data.email && !data.message && !data.website_hp) {
          return ContentService.createTextOutput(JSON.stringify({
            status: "ready",
            message: "Portfolio Contact Webhook is active and ready to receive submissions."
          })).setMimeType(ContentService.MimeType.JSON);
        }
 
-       var name = data.name || "Anonymous";
-       var surname = data.surname || "";
-       var email = data.email || "No email provided";
-       var telephone = data.telephone || "Not provided";
-       var message = data.message || "No message content";
+       // 2. Anti-Bot Honeypot Defense:
+       // If a bot submits directly to the Web App URL with website_hp filled, drop silently
+       if (data.website_hp && String(data.website_hp).trim().length > 0) {
+         console.warn("Bot honeypot triggered; discarding without sending email.");
+         return ContentService.createTextOutput(JSON.stringify({
+           status: "success",
+           message: "Message sent successfully!"
+         })).setMimeType(ContentService.MimeType.JSON);
+       }
+
+       // 3. Quota Safeguard: Protect free Gmail quota (100 emails/day) from DoS floods
+       var cache = CacheService.getScriptCache();
+       var todayKey = "portfolio_daily_emails_" + Utilities.formatDate(new Date(), "GMT", "yyyyMMdd");
+       var countStr = cache.get(todayKey);
+       var emailCount = countStr ? parseInt(countStr, 10) : 0;
+       var MAX_DAILY_EMAILS = 50; // Cap at 50/day to reserve half your 100 quota
+
+       if (emailCount >= MAX_DAILY_EMAILS) {
+         console.warn("Daily portfolio email threshold reached (" + emailCount + "). Dropping email to preserve quota.");
+         return ContentService.createTextOutput(JSON.stringify({
+           status: "success",
+           message: "Message received."
+         })).setMimeType(ContentService.MimeType.JSON);
+       }
+
+       // 4. Input Sanitization & SMTP Header Injection Defense
+       function cleanHeader(val) {
+         return String(val || "").replace(/[\r\n]+/g, " ").trim();
+       }
+
+       var name = cleanHeader(data.name || "Anonymous").slice(0, 60);
+       var surname = cleanHeader(data.surname || "").slice(0, 60);
+       var email = cleanHeader(data.email || "").slice(0, 100);
+       var telephone = cleanHeader(data.telephone || "Not provided").slice(0, 25);
+       var rawMessage = String(data.message || "No message content");
+       var message = rawMessage.replace(/<[^>]+>/g, "").trim().slice(0, 2000);
+
+       // Basic email syntax verification
+       var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+       var replyToEmail = emailRegex.test(email) ? email : "no-reply@andrewstanwix.com";
 
        var fullName = (name + " " + surname).trim();
        var subject = "[Portfolio Contact] New message from " + fullName;
 
-       var body = "You received a new message from your portfolio website:\n\n" +
+       var body = "You received a new message from your portfolio website (https://andrewstanwix.com):\n\n" +
                   "Name: " + fullName + "\n" +
                   "Email: " + email + "\n" +
                   "Telephone: " + telephone + "\n\n" +
                   "Message:\n" + message + "\n\n" +
                   "--\nSent from Andrew Stanwix's Portfolio";
 
-       // 2. Set recipient explicitly to your Gmail
-       // Note: Session.getActiveUser().getEmail() returns "" for anonymous public traffic!
+       // 5. Send Email via MailApp
        var recipient = "andrewstanwix@gmail.com";
 
        MailApp.sendEmail({
          to: recipient,
-         replyTo: email,
+         replyTo: replyToEmail,
          subject: subject,
          body: body
        });
 
-       // 3. Optional: apply "Portfolio Contact" label safely without failing email delivery
+       // Increment daily counter in cache (valid for 24 hours / 86400s)
+       cache.put(todayKey, String(emailCount + 1), 86400);
+
+       // 6. Optional: apply "Portfolio Contact" label safely without failing email delivery
        try {
          var labelName = "Portfolio Contact";
          var label = GmailApp.getUserLabelByName(labelName);

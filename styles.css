@@ -879,6 +879,17 @@ nav a {
 .contact-container form {
     width: 100%;
 }
+/* Honeypot anti-spam field - completely hidden from human visitors and screen readers */
+.hp-field {
+    position: absolute !important;
+    left: -9999px !important;
+    top: -9999px !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
 /* end contact hero section */
 
 /* hobbie page */
