@@ -8,7 +8,7 @@
   "projects": [
     {
       "id": "java-spring-api-game",
-      "title": "Real-Time Multiplayer Educational Web Game & Microservices Architecture",
+      "title": "Real-Time Multiplayer Web Game & Microservices Architecture",
       "category": "Java",
       "image": "image/front_game_cube.png",
       "description": "A full-stack, distributed multiplayer gaming platform featuring an interactive classroom setting. Designed using a decoupled microservices pattern, the system orchestrates gameplay, persistence, and secure player identity through dedicated backend services and live event handling.",
