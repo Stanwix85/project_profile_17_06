@@ -146,6 +146,16 @@
       "tags": ["Microsoft VBA", "Excel Macros", "Data Automation", "Analytics"],
       "demoUrl": "#",
       "githubUrl": "https://github.com/Stanwix85"
+    },
+    {
+      "id": "java-spring-api-game",
+      "title": "Real-Time Multiplayer Educational Web Game & Microservices Architecture",
+      "category": "Java",
+      "image": "image/front_game_cube.png",
+      "description": "A full-stack, distributed multiplayer gaming platform featuring an interactive classroom setting. Designed using a decoupled microservices pattern, the system orchestrates gameplay, persistence, and secure player identity through dedicated backend services and live event handling.",
+      "tags": ["Microservices Architechture", "REST API", "Full-Stack System Integration", "java Spring", "Auth & User Service"],
+      "demoUrl": "#",
+      "githubUrl": "https://github.com/Stanwix85"
     }
   ]
 }

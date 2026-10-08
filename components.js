@@ -7,10 +7,17 @@
 // Initialize theme early to avoid theme flashing
 function initTheme() {
     const savedTheme = localStorage.getItem('theme');
+    let activeTheme = 'light';
     if (savedTheme) {
+        activeTheme = savedTheme;
         document.documentElement.setAttribute('data-theme', savedTheme);
     } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        activeTheme = 'dark';
         document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+    if (themeColorMeta) {
+        themeColorMeta.setAttribute('content', activeTheme === 'dark' ? '#0f172a' : '#878282');
     }
 }
 initTheme();
@@ -98,6 +105,10 @@ function setupThemeToggle(headerElement) {
         themeToggleBtn.textContent = isDark ? '☀️' : '🌙';
         themeToggleBtn.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
         themeToggleBtn.title = isDark ? 'Switch to light mode' : 'Switch to dark mode';
+        const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+        if (themeColorMeta) {
+            themeColorMeta.setAttribute('content', isDark ? '#0f172a' : '#878282');
+        }
     }
 
     const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
